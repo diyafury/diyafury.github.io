@@ -360,10 +360,6 @@ s {
   max-width: initial;
 }
 
-.icon--sm {
-  --size: var(--icon-sm);
-}
-
 .icon--md {
   --size: var(--icon-md);
 }
@@ -441,21 +437,12 @@ s {
   flex-direction: column-reverse;
 }
 
-.flex-center {
-  justify-content: center;
-  align-items: center;
-}
-
 .justify-end {
   justify-content: flex-end;
 }
 
 .justify-center {
   justify-content: center;
-}
-
-.justify-between {
-  justify-content: space-between;
 }
 
 .items-center {
@@ -633,10 +620,6 @@ s {
   font-size: var(--text-md, 1.125rem);
 }
 
-.text-lg {
-  font-size: var(--text-lg, 1.375rem);
-}
-
 .text-xxl {
   font-size: var(--text-xxl, 2rem);
 }
@@ -677,20 +660,12 @@ s {
   --color-o: 1;
 }
 
-.color-contrast-medium {
-  color: hsla(var(--color-contrast-medium-h), var(--color-contrast-medium-s), var(--color-contrast-medium-l), var(--color-o, 1));
-}
-
 .color-primary {
   color: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), var(--color-o, 1));
 }
 
 .color-white {
   color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), var(--color-o, 1));
-}
-
-.color-black {
-  color: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), var(--color-o, 1));
 }
 
 [class^=color-gradient], [class*=" color-gradient"] {
@@ -725,14 +700,6 @@ s {
   --max-width-xxxxl: 150rem;
 }
 
-.max-width-xxs {
-  max-width: var(--max-width-xxs);
-}
-
-.max-width-xs {
-  max-width: var(--max-width-xs);
-}
-
 .max-width-xxl {
   max-width: var(--max-width-xxl);
 }
@@ -755,9 +722,6 @@ s {
   .max-width-adaptive-md {
     max-width: 64rem;
   }
-}
-.max-height-100\% {
-  max-height: 100%;
 }
 
 .shadow-md {
@@ -819,10 +783,6 @@ s {
   overflow: hidden;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 [class^=border-], [class*=" border-"] {
   --border-o: 1;
 }
@@ -881,10 +841,6 @@ s {
 
 .bg-black {
   background-color: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), var(--bg-o, 1));
-}
-
-.bg-opacity-90\% {
-  --bg-o: 0.9;
 }
 
 .bg-center {
@@ -1032,10 +988,6 @@ s {
   .text-xxxxl\@md {
     font-size: var(--text-xxxxl, 3rem);
   }
-
-  .max-width-xs\@md {
-    max-width: var(--max-width-xs);
-  }
 }
 /* Font Face: https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6 */
 /* Stroke with webkit: https://docs.gerillass.com/docs/text-stroke/ */
@@ -1154,46 +1106,46 @@ https://codepen.io/cathydutton/pen/dPPpWj
   --color-error-lighter-h: 342;
   --color-error-lighter-s: 89%;
   --color-error-lighter-l: 62%;
-  --color-bg-darker: hsl(274, 37%, 93%);
-  --color-bg-darker-h: 274;
-  --color-bg-darker-s: 37%;
-  --color-bg-darker-l: 93%;
-  --color-bg-dark: hsl(273, 39%, 95%);
-  --color-bg-dark-h: 273;
-  --color-bg-dark-s: 39%;
-  --color-bg-dark-l: 95%;
+  --color-bg-darker: hsl(0, 0%, 89%);
+  --color-bg-darker-h: 0;
+  --color-bg-darker-s: 0%;
+  --color-bg-darker-l: 89%;
+  --color-bg-dark: hsl(0, 0%, 93%);
+  --color-bg-dark-h: 0;
+  --color-bg-dark-s: 0%;
+  --color-bg-dark-l: 93%;
   --color-bg: hsl(0, 0%, 100%);
   --color-bg-h: 0;
   --color-bg-s: 0%;
   --color-bg-l: 100%;
-  --color-bg-light: hsl(273, 39%, 100%);
-  --color-bg-light-h: 273;
-  --color-bg-light-s: 39%;
+  --color-bg-light: hsl(0, 0%, 100%);
+  --color-bg-light-h: 0;
+  --color-bg-light-s: 0%;
   --color-bg-light-l: 100%;
-  --color-bg-lighter: hsl(274, 37%, 100%);
-  --color-bg-lighter-h: 274;
-  --color-bg-lighter-s: 37%;
+  --color-bg-lighter: hsl(0, 0%, 100%);
+  --color-bg-lighter-h: 0;
+  --color-bg-lighter-s: 0%;
   --color-bg-lighter-l: 100%;
-  --color-contrast-lower: hsl(274, 37%, 89%);
-  --color-contrast-lower-h: 274;
-  --color-contrast-lower-s: 37%;
-  --color-contrast-lower-l: 89%;
-  --color-contrast-low: hsl(273, 35%, 74%);
-  --color-contrast-low-h: 273;
-  --color-contrast-low-s: 35%;
-  --color-contrast-low-l: 74%;
-  --color-contrast-medium: hsl(271, 34%, 61%);
-  --color-contrast-medium-h: 271;
-  --color-contrast-medium-s: 34%;
-  --color-contrast-medium-l: 61%;
-  --color-contrast-high: hsl(268, 48%, 41%);
-  --color-contrast-high-h: 268;
-  --color-contrast-high-s: 48%;
-  --color-contrast-high-l: 41%;
-  --color-contrast-higher: hsl(268, 100%, 26%);
-  --color-contrast-higher-h: 268;
-  --color-contrast-higher-s: 100%;
-  --color-contrast-higher-l: 26%;
+  --color-contrast-lower: hsl(0, 0%, 83%);
+  --color-contrast-lower-h: 0;
+  --color-contrast-lower-s: 0%;
+  --color-contrast-lower-l: 83%;
+  --color-contrast-low: hsl(0, 0%, 62%);
+  --color-contrast-low-h: 0;
+  --color-contrast-low-s: 0%;
+  --color-contrast-low-l: 62%;
+  --color-contrast-medium: hsl(0, 0%, 43%);
+  --color-contrast-medium-h: 0;
+  --color-contrast-medium-s: 0%;
+  --color-contrast-medium-l: 43%;
+  --color-contrast-high: hsl(0, 0%, 17%);
+  --color-contrast-high-h: 0;
+  --color-contrast-high-s: 0%;
+  --color-contrast-high-l: 17%;
+  --color-contrast-higher: hsl(0, 0%, 0%);
+  --color-contrast-higher-h: 0;
+  --color-contrast-higher-s: 0%;
+  --color-contrast-higher-l: 0%;
   --gradient-primary-stop-1: hsl(268, 100%, 26%);
   --gradient-primary-stop-1-h: 268;
   --gradient-primary-stop-1-s: 100%;
@@ -1314,46 +1266,46 @@ https://codepen.io/cathydutton/pen/dPPpWj
     --color-error-lighter-h: 342;
     --color-error-lighter-s: 89%;
     --color-error-lighter-l: 62%;
-    --color-bg-darker: hsl(274, 37%, 93%);
-    --color-bg-darker-h: 274;
-    --color-bg-darker-s: 37%;
-    --color-bg-darker-l: 93%;
-    --color-bg-dark: hsl(273, 39%, 95%);
-    --color-bg-dark-h: 273;
-    --color-bg-dark-s: 39%;
-    --color-bg-dark-l: 95%;
+    --color-bg-darker: hsl(0, 0%, 89%);
+    --color-bg-darker-h: 0;
+    --color-bg-darker-s: 0%;
+    --color-bg-darker-l: 89%;
+    --color-bg-dark: hsl(0, 0%, 93%);
+    --color-bg-dark-h: 0;
+    --color-bg-dark-s: 0%;
+    --color-bg-dark-l: 93%;
     --color-bg: hsl(0, 0%, 100%);
     --color-bg-h: 0;
     --color-bg-s: 0%;
     --color-bg-l: 100%;
-    --color-bg-light: hsl(273, 39%, 100%);
-    --color-bg-light-h: 273;
-    --color-bg-light-s: 39%;
+    --color-bg-light: hsl(0, 0%, 100%);
+    --color-bg-light-h: 0;
+    --color-bg-light-s: 0%;
     --color-bg-light-l: 100%;
-    --color-bg-lighter: hsl(274, 37%, 100%);
-    --color-bg-lighter-h: 274;
-    --color-bg-lighter-s: 37%;
+    --color-bg-lighter: hsl(0, 0%, 100%);
+    --color-bg-lighter-h: 0;
+    --color-bg-lighter-s: 0%;
     --color-bg-lighter-l: 100%;
-    --color-contrast-lower: hsl(274, 37%, 89%);
-    --color-contrast-lower-h: 274;
-    --color-contrast-lower-s: 37%;
-    --color-contrast-lower-l: 89%;
-    --color-contrast-low: hsl(273, 35%, 74%);
-    --color-contrast-low-h: 273;
-    --color-contrast-low-s: 35%;
-    --color-contrast-low-l: 74%;
-    --color-contrast-medium: hsl(271, 34%, 61%);
-    --color-contrast-medium-h: 271;
-    --color-contrast-medium-s: 34%;
-    --color-contrast-medium-l: 61%;
-    --color-contrast-high: hsl(268, 48%, 41%);
-    --color-contrast-high-h: 268;
-    --color-contrast-high-s: 48%;
-    --color-contrast-high-l: 41%;
-    --color-contrast-higher: hsl(268, 100%, 26%);
-    --color-contrast-higher-h: 268;
-    --color-contrast-higher-s: 100%;
-    --color-contrast-higher-l: 26%;
+    --color-contrast-lower: hsl(0, 0%, 83%);
+    --color-contrast-lower-h: 0;
+    --color-contrast-lower-s: 0%;
+    --color-contrast-lower-l: 83%;
+    --color-contrast-low: hsl(0, 0%, 62%);
+    --color-contrast-low-h: 0;
+    --color-contrast-low-s: 0%;
+    --color-contrast-low-l: 62%;
+    --color-contrast-medium: hsl(0, 0%, 43%);
+    --color-contrast-medium-h: 0;
+    --color-contrast-medium-s: 0%;
+    --color-contrast-medium-l: 43%;
+    --color-contrast-high: hsl(0, 0%, 17%);
+    --color-contrast-high-h: 0;
+    --color-contrast-high-s: 0%;
+    --color-contrast-high-l: 17%;
+    --color-contrast-higher: hsl(0, 0%, 0%);
+    --color-contrast-higher-h: 0;
+    --color-contrast-higher-s: 0%;
+    --color-contrast-higher-l: 0%;
     --gradient-primary-stop-1: hsl(318, 93%, 33%);
     --gradient-primary-stop-1-h: 318;
     --gradient-primary-stop-1-s: 93%;
@@ -1373,13 +1325,6 @@ https://codepen.io/cathydutton/pen/dPPpWj
   color: var(--color-white);
 }
 .color-white *:not([class^=color-]):not(.btn) {
-  color: inherit;
-}
-
-.color-black {
-  color: var(--color-black);
-}
-.color-black *:not([class^=color-]):not(.btn) {
   color: inherit;
 }
 
@@ -1510,19 +1455,6 @@ h2, h3, h4 {
   transform: translateY(2px);
 }
 
-.btn--primary {
-  background: var(--color-primary);
-  color: var(--color-white);
-  box-shadow: var(--shadow-xs);
-}
-.btn--primary:hover {
-  background: var(--color-primary-light);
-  box-shadow: var(--shadow-sm);
-}
-.btn--primary:focus {
-  box-shadow: 0px 0px 0px 2px hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.2);
-}
-
 .btn--subtle {
   background: var(--color-bg-light);
   color: var(--color-black);
@@ -1628,17 +1560,17 @@ h2, h3, h4 {
 .gradient-img.to-bottom::after {
   width: 100%;
   height: 30%;
-  background: linear-gradient(to bottom, hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0), hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.6));
+  background: linear-gradient(to bottom, hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0), hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.7));
 }
 .gradient-img.to-left::after {
   width: 45%;
   height: 100%;
 }
 .gradient-img.to-left::after {
-  background: linear-gradient(to left, hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0), hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.6));
+  background: linear-gradient(to left, hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0), hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.7));
 }
 .gradient-img.to-left.gradient-white::after {
-  background: linear-gradient(to left, hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0), hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0.6));
+  background: linear-gradient(to left, hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0), hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 0.7));
 }
 .gradient-img img {
   -o-object-fit: cover;
@@ -1648,13 +1580,11 @@ h2, h3, h4 {
 }
 
 .poi__btn {
-  --size: 16px;
   background: linear-gradient(to left, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2));
 }
-@media (min-width: 64rem) {
-  .poi__btn {
-    --size: 22px;
-  }
+
+.tooltip {
+  background: linear-gradient(to right, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2));
 }
 /* -------------------------------- 
 
@@ -2120,208 +2050,6 @@ Usage: codyhouse.co/license
 
 /* -------------------------------- 
 
-File#: _1_modal-window
-Title: Modal Window
-Descr: A modal dialog used to display critical information
-Usage: codyhouse.co/license
-
--------------------------------- */
-.modal {
-  position: fixed;
-  z-index: var(--z-index-overlay, 15);
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-.modal:not(.modal--is-visible) {
-  pointer-events: none;
-  background-color: transparent;
-}
-
-.modal--is-visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal__close-btn {
-  display: flex;
-  flex-shrink: 0;
-  border-radius: 50%;
-  transition: 0.2s;
-}
-.modal__close-btn .icon {
-  display: block;
-  margin: auto;
-}
-
-.modal__close-btn--outer {
-  width: 48px;
-  height: 48px;
-  position: fixed;
-  top: var(--space-sm);
-  right: var(--space-sm);
-  z-index: var(--z-index-fixed-element, 10);
-  background-color: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.9);
-  transition: 0.2s;
-}
-.modal__close-btn--outer .icon {
-  color: var(--color-white);
-  transition: transform 0.3s var(--ease-out-back);
-}
-.modal__close-btn--outer:hover {
-  background-color: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 1);
-}
-.modal__close-btn--outer:hover .icon {
-  transform: scale(1.1);
-}
-
-.modal__close-btn--inner {
-  --size: 32px;
-  width: var(--size);
-  height: var(--size);
-  background-color: var(--color-bg-light);
-  box-shadow: var(--inner-glow), var(--shadow-sm);
-  transition: 0.2s;
-}
-.modal__close-btn--inner .icon {
-  color: inherit;
-}
-.modal__close-btn--inner:hover {
-  background-color: var(--color-bg-lighter);
-  box-shadow: var(--inner-glow), var(--shadow-md);
-}
-
-:root {
-  --modal-transition-duration: 0.2s;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .modal--animate-fade {
-    --modal-transition-duration: 0.2s;
-    transition: opacity var(--modal-transition-duration), background-color var(--modal-transition-duration), visibility 0s var(--modal-transition-duration);
-  }
-  .modal--animate-fade.modal--is-visible {
-    transition: opacity var(--modal-transition-duration), background-color var(--modal-transition-duration), visibility 0s;
-  }
-
-  .modal--animate-scale,
-.modal--animate-translate-up,
-.modal--animate-translate-down,
-.modal--animate-translate-right,
-.modal--animate-translate-left {
-    --modal-transition-duration: .2s;
-    transition: opacity var(--modal-transition-duration), background-color var(--modal-transition-duration), visibility 0s var(--modal-transition-duration);
-  }
-  .modal--animate-scale .modal__content,
-.modal--animate-translate-up .modal__content,
-.modal--animate-translate-down .modal__content,
-.modal--animate-translate-right .modal__content,
-.modal--animate-translate-left .modal__content {
-    will-change: transform;
-    transition: transform var(--modal-transition-duration) var(--ease-out);
-  }
-  .modal--animate-scale.modal--is-visible,
-.modal--animate-translate-up.modal--is-visible,
-.modal--animate-translate-down.modal--is-visible,
-.modal--animate-translate-right.modal--is-visible,
-.modal--animate-translate-left.modal--is-visible {
-    transition: opacity var(--modal-transition-duration), background-color var(--modal-transition-duration), visibility 0s;
-  }
-  .modal--animate-scale.modal--is-visible .modal__content,
-.modal--animate-translate-up.modal--is-visible .modal__content,
-.modal--animate-translate-down.modal--is-visible .modal__content,
-.modal--animate-translate-right.modal--is-visible .modal__content,
-.modal--animate-translate-left.modal--is-visible .modal__content {
-    transform: scale(1);
-  }
-
-  .modal--animate-slide-up,
-.modal--animate-slide-down,
-.modal--animate-slide-right,
-.modal--animate-slide-left {
-    --modal-transition-duration: 0.3s;
-    transition: opacity 0s var(--modal-transition-duration), background-color var(--modal-transition-duration), visibility 0s var(--modal-transition-duration);
-  }
-  .modal--animate-slide-up .modal__content,
-.modal--animate-slide-down .modal__content,
-.modal--animate-slide-right .modal__content,
-.modal--animate-slide-left .modal__content {
-    will-change: transform;
-    transition: transform var(--modal-transition-duration) var(--ease-out);
-  }
-  .modal--animate-slide-up.modal--is-visible,
-.modal--animate-slide-down.modal--is-visible,
-.modal--animate-slide-right.modal--is-visible,
-.modal--animate-slide-left.modal--is-visible {
-    transition: background-color var(--modal-transition-duration), visibility 0s;
-  }
-  .modal--animate-slide-up.modal--is-visible .modal__content,
-.modal--animate-slide-down.modal--is-visible .modal__content,
-.modal--animate-slide-right.modal--is-visible .modal__content,
-.modal--animate-slide-left.modal--is-visible .modal__content {
-    transform: scale(1);
-  }
-
-  .modal--animate-scale .modal__content {
-    transform: scale(0.95);
-  }
-
-  .modal--animate-translate-up .modal__content {
-    transform: translateY(40px);
-  }
-
-  .modal--animate-translate-down .modal__content {
-    transform: translateY(-40px);
-  }
-
-  .modal--animate-translate-right .modal__content {
-    transform: translateX(-40px);
-  }
-
-  .modal--animate-translate-left .modal__content {
-    transform: translateX(40px);
-  }
-
-  .modal--animate-slide-up .modal__content {
-    transform: translateY(100%);
-  }
-
-  .modal--animate-slide-down .modal__content {
-    transform: translateY(-100%);
-  }
-
-  .modal--animate-slide-right .modal__content {
-    transform: translateX(-100%);
-  }
-
-  .modal--animate-slide-left .modal__content {
-    transform: translateX(100%);
-  }
-}
-.modal--is-loading .modal__content {
-  visibility: hidden;
-}
-.modal--is-loading .modal__loader {
-  display: flex;
-}
-
-.modal__loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  pointer-events: none;
-}
-
-/* -------------------------------- 
-
 File#: _1_reveal-effects
 Title: Reveal Effects
 Descr: A collection of reveal effects targeting specific elements as they enter the viewport
@@ -2474,6 +2202,123 @@ Usage: codyhouse.co/license
 }
 .stack-cards__item::marker {
   content: none;
+}
+
+/* -------------------------------- 
+
+File#: _1_tooltip
+Title: Tooltip
+Descr: A popup displaying additional text information
+Usage: codyhouse.co/license
+
+-------------------------------- */
+:root {
+  --tooltip-triangle-size: 0;
+}
+
+.tooltip-trigger {
+  /* style inline-text tooltip trigger */
+  white-space: nowrap;
+  border-bottom: 1px dotted var(--color-contrast-high);
+  cursor: help;
+}
+
+.tooltip {
+  /* tooltip element - created using js */
+  position: absolute;
+  z-index: var(--z-index-popover, 5);
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-md);
+  max-width: 200px;
+  background-color: hsla(var(--color-contrast-higher-h), var(--color-contrast-higher-s), var(--color-contrast-higher-l), 0.98);
+  box-shadow: var(--shadow-md);
+  color: var(--color-bg);
+  font-size: var(--text-sm);
+  font-weight: bold;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.tooltip a {
+  color: inherit;
+  text-decoration: underline;
+}
+@supports ((-webkit-clip-path: inset(50%)) or (clip-path: inset(50%))) {
+  .tooltip::before {
+    /* tooltip triangle  */
+    content: "";
+    position: absolute;
+    background-color: inherit;
+    border: inherit;
+    width: var(--tooltip-triangle-size);
+    height: var(--tooltip-triangle-size);
+    -webkit-clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 0% 100%);
+  }
+}
+
+.tootip:not(.tooltip--sticky) {
+  pointer-events: none;
+}
+
+/* size variations */
+.tooltip--sm {
+  max-width: 150px;
+  font-size: var(--text-xs);
+  padding: var(--space-xxxs) var(--space-xxs);
+}
+
+.tooltip--md {
+  max-width: 300px;
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.tooltip--lg {
+  max-width: 350px;
+  font-size: var(--text-base-size);
+  padding: var(--space-xs) var(--space-sm);
+}
+
+/* tooltip position */
+.tooltip {
+  /* variable used in JS to proper place tooltip triangle */
+  --tooltip-triangle-translate: 0px;
+}
+
+.tooltip--top::before, .tooltip--bottom::before {
+  left: calc(50% - var(--tooltip-triangle-size) / 2);
+}
+
+.tooltip--top::before {
+  bottom: calc(var(--tooltip-triangle-size) * -0.5);
+  transform: translateX(var(--tooltip-triangle-translate)) rotate(-45deg);
+}
+
+.tooltip--bottom::before {
+  top: calc(var(--tooltip-triangle-size) * -0.5);
+  transform: translateX(var(--tooltip-triangle-translate)) rotate(135deg);
+}
+
+.tooltip--left::before, .tooltip--right::before {
+  top: calc(50% - var(--tooltip-triangle-size) / 2);
+}
+
+.tooltip--left::before {
+  right: calc(var(--tooltip-triangle-size) * -0.5);
+  transform: translateX(var(--tooltip-triangle-translate)) rotate(-135deg);
+}
+
+.tooltip--right::before {
+  left: calc(var(--tooltip-triangle-size) * -0.5);
+  transform: translateX(var(--tooltip-triangle-translate)) rotate(45deg);
+}
+
+.tooltip--is-hidden {
+  /* class used in JS to hide the tooltip element before its top/left positions are set */
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* -------------------------------- 

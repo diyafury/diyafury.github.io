@@ -124,7 +124,7 @@
 
     <section class="bg-dark padding-y-xxl">
       <div class="container max-width-adaptive-md">
-        <div class="color-black text-component text-md text-xl@xs text-center margin-bottom-sm">
+        <div class="text-component text-md text-xl@xs text-center margin-bottom-sm">
           <p><strong>Alexandria Real Estate Equities</strong> was founded in 1994, Alexandria Real Estate Equities, Inc. 
             <svg style="width: 1em; height: 1em;" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <title>Path</title>
@@ -154,152 +154,35 @@
         
           <ul class="poi js-poi">
             <li style="top: 30%; left: 10%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn" aria-label="Point 1. Click for more info." aria-controls="poi-modal-1">
+              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="8 Davis Drive" data-tooltip-position="right">
                 <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
               </button>
             </li>
         
             <li style="top: 56%; left: 35%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn" aria-label="Point 2. Click for more info." aria-controls="poi-modal-2">
+              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="9 Laboratory Drive" data-tooltip-position="right">
                 <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
               </button>
             </li>
         
             <li style="top: 20%; left: 50%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn" aria-label="Point 3. Click for more info." aria-controls="poi-modal-3">
+              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="LaunchLabs" data-tooltip-position="right">
                 <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
               </button>
             </li>
         
             <li style="bottom: 23%; right: 20%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn" aria-label="Point 4. Click for more info." aria-controls="poi-modal-4">
+              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="AscentLabs" data-tooltip-position="right">
                 <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
               </button>
             </li>
           </ul>
         </figure>
-      
-      <!-- Modal elements - one for each POI -->
-      <!-- POI 1 -->
-      <!--div id="poi-modal-1" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
-        <div class="modal__content width-100% max-width-xxs max-width-xs@md max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
-          <div class="padding-sm">
-            <div class="grid gap-sm">
-              <figure class="col-5@md">
-                <img class="block width-100%" src="./assets/img/map.png" alt="Image description">
-              </figure>
-      
-              <div class="col-7@md">
-                <div class="text-component">
-                  <h1 class="text-lg">Cool Plant</h1>
-                  <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
-                </div>
-              </div>
-            </div>
-      
-            <footer class="margin-top-sm flex justify-between items-center">
-              <p>$12.00</p>
-              <a class="btn btn--primary" href="#0">Buy Now</a>
-            </footer>
-          </div>
-        </div>
-      
-        <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
-          <svg class="icon icon--sm" viewBox="0 0 24 24">
-            <title>Close modal window</title>
-            <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="3" x2="21" y2="21" />
-              <line x1="21" y1="3" x2="3" y2="21" />
-            </g>
-          </svg>
-        </button>
-      </div-->
-      
-      <!-- POI 2 -->
-      <!--div id="poi-modal-2" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
-        <div class="modal__content width-100% max-width-xs max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
-          <div class="padding-sm">
-            <div class="text-component">
-              <h1 class="text-md">Headphones</h1>
-              <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
-            </div>
-      
-            <footer class="margin-top-sm flex justify-between items-center">
-              <p>$259.00</p>
-              <a class="btn btn--primary" href="#0">Buy Now</a>
-            </footer>
-          </div>
-        </div>
-      
-        <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
-          <svg class="icon icon--sm" viewBox="0 0 24 24">
-            <title>Close modal window</title>
-            <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="3" x2="21" y2="21" />
-              <line x1="21" y1="3" x2="3" y2="21" />
-            </g>
-          </svg>
-        </button>
-      </div-->
-      
-      <!-- POI 3 -->
-      <!--div id="poi-modal-3" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
-        <div class="modal__content width-100% max-width-xs max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
-          <div class="padding-sm">
-            <div class="text-component">
-              <h1 class="text-md">Monitor</h1>
-              <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
-            </div>
-      
-            <footer class="margin-top-sm flex justify-between items-center">
-              <p>$129.00</p>
-              <a class="btn btn--primary" href="#0">Buy Now</a>
-            </footer>
-          </div>
-        </div>
-      
-        <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
-          <svg class="icon icon--sm" viewBox="0 0 24 24">
-            <title>Close modal window</title>
-            <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="3" x2="21" y2="21" />
-              <line x1="21" y1="3" x2="3" y2="21" />
-            </g>
-          </svg>
-        </button>
-      </div-->
-      
-      <!-- POI 4 -->
-      <!--div id="poi-modal-4" class="modal modal--animate-scale flex flex-center bg-black bg-opacity-90% padding-md js-modal">
-        <div class="modal__content width-100% max-width-xs max-height-100% overflow-auto bg radius-md inner-glow shadow-md" role="alertdialog">
-          <div class="padding-sm">
-            <div class="text-component">
-              <h1 class="text-md">Keyboard</h1>
-              <p class="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae culpa, inventore alias ab atque similique quod ea reprehenderit.</p>
-            </div>
-      
-            <footer class="margin-top-sm flex justify-between items-center">
-              <p>$49.00</p>
-              <a class="btn btn--primary" href="#0">Buy Now</a>
-            </footer>
-          </div>
-        </div>
-      
-        <button class="reset modal__close-btn modal__close-btn--outer js-modal__close js-tab-focus">
-          <svg class="icon icon--sm" viewBox="0 0 24 24">
-            <title>Close modal window</title>
-            <g fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="3" x2="21" y2="21" />
-              <line x1="21" y1="3" x2="3" y2="21" />
-            </g>
-          </svg>
-        </button>
-      </div-->
     </section>
 
     <section class="bg-dark padding-y-xxl">
       <div class="container max-width-adaptive-md">
-        <div class="color-black text-component text-center margin-bottom-xxl">
+        <div class="text-component text-center margin-bottom-xxl">
           <div class="text-xs text-sm@xs text-center text-uppercase margin-bottom-sm">LOCATION  +  INNOVATION  +  TALENT  +  CAPITAL</div>
           <h1 class="text-uppercase text-md text-lg@xxs text-xxxl@xs text-xxxxl@md line-height-1"><span class="text-stroke">Our</span>Properties</h1>
         </div>
@@ -313,14 +196,14 @@
               </div>
 
               <div class="flex flex-column justify-center color-white padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs">
+                <div class="max-width-xxs@xs text-shadow-sm">
                   <div class="margin-bottom-lg text-xs text-uppercase">1/4</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Center&reg;​ for </strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>Advanced Technologies</strong></h2>
                   <p class="margin-bottom-sm line-height-lg">The Alexandria Center&reg;​​ for Advanced Technologies – Research Triangle is a highly dynamic campus designed to serve as a mission-critical facility for a range of cutting-edge life science companies. Immediate opportunity for additional campus expansion. Pre-approved site plan for an additional 135,000 SF with up to 1 million SF at full campus development.</p>
                 </div>
                 <div>
-                  <a href="property.html" style="max-width:256px" class="btn btn--sm btn--gradient text-uppercase padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0"><strong>8 Davis Drive</strong></a>
+                  <a href="./8-davis-drive.html" style="max-width:256px" class="btn btn--sm btn--gradient text-uppercase padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0"><strong>8 Davis Drive</strong></a>
                   <strong class="text-uppercase inline-block padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0 btn--sm">Now leasing</strong>
                 </div>
                 <div class="margin-top-lg margin-top-xl@xs margin-top-xxl@md text-xs text-uppercase">4, 6, 8 and 10 Davis Drive&nbsp;&nbsp;|&nbsp;&nbsp;Research Triangle</div>
@@ -332,15 +215,15 @@
                 <img class="block width-100%" src="./assets/img/card_image_2.png" alt="">
               </div>
               
-              <div class="flex flex-column justify-center color-black padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs">
+              <div class="flex flex-column justify-center padding-x-lg padding-y-md">
+                <div class="max-width-xxs@xs text-shadow-sm">
                   <div class="margin-bottom-lg text-xs text-uppercase">2/4</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Center&reg;​ for </strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>AgTech</strong></h2>
                   <p class="margin-bottom-sm line-height-lg">The Alexandria Center&reg; for AgTech is the country's only highly amenitized, multi-tenant agtech campus. It is designed to help companies attract and retain talent while offering turnkey laboratory, greenhouse, and office space that ignites innovation.</p>
                 </div>
                 <div>
-                  <a href="property.html" style="max-width:256px" class="btn btn--sm btn--gradient text-uppercase padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0"><strong>9 Laboratory Drive</strong></a>
+                  <a href="./9-labaratory-drive.html" style="max-width:256px" class="btn btn--sm btn--gradient text-uppercase padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0"><strong>9 Laboratory Drive</strong></a>
                   <strong class="text-uppercase inline-block padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0 btn--sm">Now leasing</strong>
                 </div>
                 <div class="margin-top-lg margin-top-xl@xs margin-top-xxl@md text-xs text-uppercase">5 and 9 Laboratory Drive&nbsp;&nbsp;|&nbsp;&nbsp;Research Triangle</div>
@@ -353,14 +236,14 @@
               </div>
               
               <div class="flex flex-column justify-center color-white padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs">
+                <div class="max-width-xxs@xs text-shadow-sm">
                   <div class="margin-bottom-lg text-xs text-uppercase">3/4</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Center&reg;​ for </strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>Alexandria LaunchLabs</strong></h2>
                   <p class="margin-bottom-sm line-height-lg">The premier platform for early-stage agtech companies in Research Triangle. Alexandria LaunchLabs provides flexible shared and private research and office environments in fully serviced laboratories, with state-of-art equipment and safety programs designed for rapid activation of operations.</p>
                 </div>
                 <div>
-                  <a href="property.html" style="max-width:256px" class="btn btn--sm btn--gradient text-uppercase padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0"><strong>Discover more</strong></a>
+                  <a href="./launchlabs.html" style="max-width:256px" class="btn btn--sm btn--gradient text-uppercase padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0"><strong>Discover more</strong></a>
                 </div>
               </div>
             </li>
@@ -371,7 +254,7 @@
               </div>
               
               <div class="padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs">
+                <div class="max-width-xxs@xs text-shadow-sm">
                   <div class="margin-bottom-lg text-xs text-uppercase">4/4</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Center&reg;​ for </strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>Alexandria AscentLabs</strong></h2>
@@ -379,7 +262,7 @@
                     Located within the Alexandria Center&reg; for Advanced Technologies and the Alexandria Center&reg; for AgTech, AscentLabs is the premier space for growing life science and agtech companies, providing move-in-ready laboratory, office, and greenhouse environments and shared equipment and services to teams of 2-60.</p>
                 </div>
                 <div>
-                  <a href="property.html" style="max-width:256px" class="btn btn--sm btn--gradient text-uppercase padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0"><strong>Discover more</strong></a>
+                  <a href="./ascentlabs.html" style="max-width:256px" class="btn btn--sm btn--gradient text-uppercase padding-x-xxl padding-y-sm margin-top-sm margin-bottom-0"><strong>Discover more</strong></a>
                 </div>
               </div>
             </li>
