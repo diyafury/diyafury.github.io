@@ -12,6 +12,8 @@
       --color-accent: rgb(255, 105, 180);
       --color-accent-lightest:  rgb(255, 105, 180, 0.2);
       --color-text: black;
+      --color-accent-2: rgb(0, 206, 209);
+      --color-accent-2-lightest: rgb(0, 206, 209, 0.2);
     }
 
     body {
@@ -74,6 +76,20 @@
     blockquote p::after {
       content: '\201D';
       font-size: xx-large;
+    }
+
+    button {
+      border-radius: 10px;
+      border: 1px solid var(--color-accent-2);
+      background: var(--color-accent-2-lightest);
+      color: var(--color-accent-2);
+      text-transform: uppercase;
+      font-family: 'concert one';
+      padding: 5px 20px;
+    }
+
+    button:hover {
+      background: white;
     }
 
   </style>
