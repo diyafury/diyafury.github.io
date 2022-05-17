@@ -14,7 +14,7 @@ class LikeButton extends React.Component {
             //return 'You liked comment number ' + this.props.commentID
             return (
                 e( 
-                    'div', 
+                    'div', {},
                     e( 'p', {}, 'You liked quote ' + this.props.commentID ),
                     e(
                         'button', {
