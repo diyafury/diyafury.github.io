@@ -63,12 +63,15 @@
       margin-bottom: 2%;
     }
 
-    blockquote::before {
+    blockquote p::before,  
+    blockquote p::after {
       content: '\201C';
-      font-size: xx-large;
+      font-size: 3em;
+      font-family: 'Concert One';
+      color: var(--color-accent-lightest);
     }
 
-    blockquote::after {
+    blockquote p::after {
       content: '\201D';
       font-size: xx-large;
     }
@@ -83,17 +86,17 @@
     <section>
       <h2>Example loading React as a script rather than using build tooling.</h2>
       <blockquote>
-        Life is ironic. It takes sadness to know what happiness is, noise to appreciate silence & absence to value presence.
+        <p>Life is ironic. It takes sadness to know what happiness is, noise to appreciate silence & absence to value presence.</p>
         <div class="like_button_container" data-commentid="1"></div>
       </blockquote>
 
       <blockquote>
-        I love you not because of who <em>you</em> are, but because of who <em>I</em> when I am with you.
+        <p>I love you not because of who <em>you</em> are, but because of who <em>I</em> when I am with you.</p>
         <div class="like_button_container" data-commentid="2"></div>
       </blockquote>
 
       <blockquote>
-        Your time is limited, so don't waste it living someone else's life.
+        <p>Your time is limited, so don't waste it living someone else's life.</p>
         <div class="like_button_container" data-commentid="3"></div>
       </blockquote>
     </section>
