@@ -74,17 +74,19 @@
       font-size: 3em;
       font-family: 'Concert One';
       color: var(--color-accent-lightest);
+      position: absolute;
     }
 
     blockquote p::before {
       content: '\201C';
-      position: absolute;
       left: -40px;
       top: 0;
     }
 
     blockquote p::after {
       content: '\201D';
+      bottom: -20px;
+      margin-left: 10px;
     }
 
     button {
