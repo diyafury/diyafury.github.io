@@ -14,10 +14,12 @@
       --color-text: black;
       --color-accent-2: rgb(0, 206, 209);
       --color-accent-2-lightest: rgb(0, 206, 209, 0.2);
+      --font-family-heading: 'Concert One', cursive;
+      --font-family-body: 'Roboto', sans-serif;
     }
 
     body {
-      font-family: 'Roboto', sans-serif;
+      font-family: var(--font-family-body);
       color: #000;
     }
 
@@ -26,7 +28,7 @@
     }
 
     h1, h2, h3, h4 {
-      font-family: 'Concert One', cursive;
+      font-family: var(--font-family-heading);
       color: var(--color-accent);
       text-align: center;
       margin-bottom: 1em;
@@ -72,7 +74,7 @@
     blockquote p::before,  
     blockquote p::after {
       font-size: 3em;
-      font-family: 'Concert One';
+      font-family: var(--font-family-heading);
       color: var(--color-accent-lightest);
       position: absolute;
     }
@@ -89,6 +91,12 @@
       margin-left: 10px;
     }
 
+    blockquote span {
+      font-family: var(--font-family-heading);
+      display: inline-block;
+      margin-right: 20px;
+    }
+
     button {
       border-radius: 10px;
       border: 1px solid var(--color-accent-2);
@@ -97,6 +105,7 @@
       text-transform: uppercase;
       font-family: 'concert one';
       padding: 5px 20px;
+      cursor: pointer;
     }
 
     button:hover {
