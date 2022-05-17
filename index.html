@@ -67,15 +67,20 @@
 
     blockquote p::before,  
     blockquote p::after {
-      content: '\201C';
       font-size: 3em;
       font-family: 'Concert One';
       color: var(--color-accent-lightest);
     }
 
+    blockquote::before {
+      content: '\201C';
+      position: absolute;
+      left: -30px;
+      top: 0;
+    }
+
     blockquote p::after {
       content: '\201D';
-      font-size: xx-large;
     }
 
     button {
