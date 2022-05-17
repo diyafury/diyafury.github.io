@@ -63,6 +63,16 @@
       margin-bottom: 2%;
     }
 
+    blockquote::before {
+      content: '\201C';
+      font-size: xx-large;
+    }
+
+    blockquote::after {
+      content: '\201D';
+      font-size: xx-large;
+    }
+
   </style>
  </head>
  <body>
@@ -72,20 +82,20 @@
 
     <section>
       <h2>Example loading React as a script rather than using build tooling.</h2>
-      <p>
-        This is the first comment.
+      <blockquote>
+        Life is ironic. It takes sadness to know what happiness is, noise to appreciate silence & absence to value presence.
         <div class="like_button_container" data-commentid="1"></div>
-      </p>
+      </blockquote>
 
-      <p>
-        This is the second comment.
+      <blockquote>
+        I love you not because of who <em>you</em> are, but because of who <em>I</em> when I am with you.
         <div class="like_button_container" data-commentid="2"></div>
-      </p>
+      </blockquote>
 
-      <p>
-        This is the third comment.
+      <blockquote>
+        Your time is limited, so don't waste it living someone else's life.
         <div class="like_button_container" data-commentid="3"></div>
-      </p>
+      </blockquote>
     </section>
 
   </div>
