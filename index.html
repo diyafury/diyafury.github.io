@@ -4,7 +4,35 @@
    <title>Diyafury</title>
  </head>
  <body>
-  <h1>Yes, and?</h1>
+  <h1>Diyafury's playground</h1>
+
+
+  <section>
+    <h2>Example loading React as a script rather than using build tooling.</h2>
+    <p>
+      This is the first comment.
+      <div class="like_button_container" data-commentid="1"></div>
+    </p>
+
+    <p>
+      This is the second comment.
+      <div class="like_button_container" data-commentid="2"></div>
+    </p>
+
+    <p>
+      This is the third comment.
+      <div class="like_button_container" data-commentid="3"></div>
+    </p>
+  </section>
+
+
+  <!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="./js/like_button.js"></script>
  </body>
   
  </html>
