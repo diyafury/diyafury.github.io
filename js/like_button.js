@@ -15,7 +15,7 @@ class LikeButton extends React.Component {
             return (
                 e( 
                     'div', 
-                    'You liked comment number ' + this.props.commentID + ':&nbsp;',
+                    e( 'p', 'You liked quote ' + this.props.commentID),
                     e(
                         'button', {
                             onClick: () => this.setState({
