@@ -13,8 +13,8 @@ class LikeButton extends React.Component {
         if (this.state.liked) {
             //return 'You liked comment number ' + this.props.commentID
             return (
-                e( 
-                    'div', {className: 'button-container'}, 
+                // e( 
+                //     'div', 
                     'You liked comment number ' + this.props.commentID,
                     e(
                         'button', {
@@ -24,7 +24,7 @@ class LikeButton extends React.Component {
                         },
                         'Unlike'
                     )
-                )
+                // )
             )
         }
         return (
