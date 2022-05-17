@@ -15,30 +15,59 @@
     h1, h2, h3, h4 {
       font-family: 'Concert One', cursive;
     }
+
+    strong {
+      font-weight: 400;
+    }
+
+    .container {
+      max-width: 1920px;
+      border-radius: 50px;
+      border: 1px solid rgb(255, 105, 180);
+      background: rgb(255, 105, 180, 0.2);
+      padding: 2%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+    }
+
+    section {
+      border-radius: inherit;
+      border: 1px solid #000;
+      background: white;
+      padding: 2%;
+    }
+
   </style>
  </head>
  <body>
-  <h1>Diyafury's playground</h1>
+  <div class="container">
+    <h1>Diyafury's playground</h1>
 
 
-  <section>
-    <h2>Example loading React as a script rather than using build tooling.</h2>
-    <p>
-      This is the first comment.
-      <div class="like_button_container" data-commentid="1"></div>
-    </p>
+    <section>
+      <h2>Example loading React as a script rather than using build tooling.</h2>
+      <p>
+        This is the first comment.
+        <div class="like_button_container" data-commentid="1"></div>
+      </p>
 
-    <p>
-      This is the second comment.
-      <div class="like_button_container" data-commentid="2"></div>
-    </p>
+      <p>
+        This is the second comment.
+        <div class="like_button_container" data-commentid="2"></div>
+      </p>
 
-    <p>
-      This is the third comment.
-      <div class="like_button_container" data-commentid="3"></div>
-    </p>
-  </section>
+      <p>
+        This is the third comment.
+        <div class="like_button_container" data-commentid="3"></div>
+      </p>
+    </section>
 
+  </div>
 
   <!-- Load React. -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
