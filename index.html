@@ -16,6 +16,8 @@
       --color-accent-2-lightest: rgb(0, 206, 209, 0.2);
       --font-family-heading: 'Concert One', cursive;
       --font-family-body: 'Roboto', sans-serif;
+      --color-accent-3: rgb(255, 255, 0);
+      --color-accent-3-lightest: rgb(255, 255, 0.2);
     }
 
     body {
@@ -98,7 +100,7 @@
       font-size: smaller;
     }
 
-    button {
+    button, a {
       border-radius: 10px;
       border: 1px solid var(--color-accent-2);
       background: var(--color-accent-2-lightest);
@@ -111,6 +113,12 @@
 
     button:hover {
       background: white;
+    }
+
+    a {
+      border: 1px solid var(--color-accent-3);
+      background: var(--color-accent-3-lightest);
+      color: var(--color-accent-3);
     }
 
   </style>
@@ -139,9 +147,10 @@
     </section>
 
     <section>
+      <h2>Tic-Tac-Toe</h2>
       <p>Totally bored? Go play React's tic-tac-toe tutorial, riveting stuff. May I'll improve on it, maybe I won't. You'll just have to keep checking, won't you?</p>
       <div>
-        <a href="/tic-tac-toe">Tic-tac-toe</a>
+        <a class="button" href="/tic-tac-toe">Tic-Tac-Toe</a>
       </div>
     </section>
 
