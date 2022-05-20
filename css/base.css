@@ -2,14 +2,16 @@
     
 :root {
     --color-accent: rgb(255, 105, 180);
-    --color-accent-lightest:  rgb(255, 105, 180, 0.2);
+    --color-accent-lightest:  rgba(255, 105, 180, 0.2);
     --color-text: black;
     --color-accent-2: rgb(0, 206, 209);
-    --color-accent-2-lightest: rgb(0, 206, 209, 0.2);
+    --color-accent-2-lightest: rgba(0, 206, 209, 0.2);
     --font-family-heading: 'Concert One', cursive;
     --font-family-body: 'Roboto', sans-serif;
     --color-accent-3: rgb(255, 215, 0);
-    --color-accent-3-lightest: rgb(255, 255, 0, 0.2);
+    --color-accent-3-lightest: rgba(255, 255, 0, 0.2);
+    --color-accent-4: rgb(30, 144, 255);
+    --color-accent-4-lightest: rgba(30, 144, 255, 0.2);
 }
 
 body {
@@ -117,4 +119,10 @@ a {
     background: var(--color-accent-3-lightest);
     color: var(--color-accent-3);
     text-decoration: none;
+}
+
+button[class^='toggle'] {
+    border-color: var(--color-accent-4);
+    color: var(--color-accent-4);
+    background: var(--color-accent-4-lightest);
 }
