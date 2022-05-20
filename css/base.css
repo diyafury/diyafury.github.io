@@ -126,3 +126,8 @@ button[class^='toggle'] {
     color: var(--color-accent-4);
     background: var(--color-accent-4-lightest);
 }
+
+.two-col {
+    display: flex;
+    flex-direction: column-reverse;
+}
