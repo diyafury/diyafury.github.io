@@ -97,7 +97,7 @@ blockquote span {
     font-size: smaller;
 }
 
-button, a {
+button, a:not(.screenshot) {
     border-radius: 10px;
     border: 1px solid var(--color-accent-2);
     background: var(--color-accent-2-lightest);
