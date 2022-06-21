@@ -137,3 +137,10 @@ button[class^='toggle'] {
 .two-col > * {
     flex: 1;
 }
+
+img.screenshot {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0 auto;
+}
