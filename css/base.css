@@ -34,7 +34,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    color: var(--color-accent);
+    color: white;
 }
 
 p {
@@ -54,8 +54,9 @@ strong {
     background: var(--color-accent-lightest);
     padding: 2%;
 
-    background: rgb(212,252,121);
-    background: linear-gradient(90deg, rgba(212,252,121,1) 0%, rgba(150,230,161,1) 45%);
+    /*background: rgb(212,252,121);
+    background: linear-gradient(90deg, rgba(212,252,121,1) 0%, rgba(150,230,161,1) 45%);*/
+    background: rgb(255,255,255,0.2);
 }
 
 section {
