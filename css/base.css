@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto:ital,wght@0,100;0,400;1,100;1,400&display=swap');
     
 :root {
-    --color-accent: rgb(255, 105, 180);
-    --color-accent-lightest:  rgba(255, 105, 180, 0.2);
+    --color-accent: rgb(247,112,98,1);
+    --color-accent-lightest:  rgba(247,112,98,1, 0.2);
     --color-text: black;
     --color-accent-2: rgb(0, 206, 209);
     --color-accent-2-lightest: rgba(0, 206, 209, 0.2);
@@ -17,6 +17,8 @@
 body {
     font-family: var(--font-family-body);
     color: #000;
+    background: background: rgb(247,112,98);
+    background: linear-gradient(90deg, rgba(247,112,98,1) 0%, rgba(254,81,150,1) 54%);
 }
 
 *, * * {
@@ -26,10 +28,13 @@ body {
 
 h1, h2, h3, h4 {
     font-family: var(--font-family-heading);
-    color: var(--color-accent);
     text-align: center;
     margin-bottom: 1em;
     margin-top: 0;
+}
+
+h1 {
+    color: var(--color-accent);
 }
 
 p {
@@ -42,20 +47,15 @@ strong {
 
 .container {
     max-width: 1280px ; /*1920px;*/
-    margin: 2% 0;
+    margin: 2% auto;
     width: 90%;
     border-radius: 50px;
-    border: 10px solid var(--color-accent);
+    /* border: 10px solid var(--color-accent); */
     background: var(--color-accent-lightest);
     padding: 2%;
-    top: 0;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
+
+    background: rgb(212,252,121);
+    background: linear-gradient(90deg, rgba(212,252,121,1) 0%, rgba(150,230,161,1) 45%);
 }
 
 section {
@@ -119,6 +119,7 @@ a {
     background: var(--color-accent-3-lightest);
     color: var(--color-accent-3);
     text-decoration: none;
+    outline: none;
 }
 
 button[class^='toggle'] {
@@ -138,9 +139,11 @@ button[class^='toggle'] {
     flex: 1;
 }
 
-img.screenshot {
-    width: 50%;
+.screenshot {
+    width: 100%;
     height: auto;
+    border: 5px dotted var(--color-accent);
     border-radius: 10px;
-    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 4%;
 }
