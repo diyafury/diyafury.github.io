@@ -18,8 +18,7 @@ body {
     font-family: var(--font-family-body);
     color: #000;
     background: rgb(247,112,98);
-    background: linear-gradient(90deg, rgba(247,112,98,1) 0%, rgba(254,81,150,1) 54%);
-    background-image: url('/img/fury_transparent/png');
+    background: linear-gradient(90deg, rgba(247,112,98,1) 0%, rgba(254,81,150,1) 54%), url('/img/fury_transparent.png');
 }
 
 *, * * {
