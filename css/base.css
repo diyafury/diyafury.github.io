@@ -17,7 +17,7 @@
 body {
     font-family: var(--font-family-body);
     color: #000;
-    background: background: rgb(247,112,98);
+    background: rgb(247,112,98);
     background: linear-gradient(90deg, rgba(247,112,98,1) 0%, rgba(254,81,150,1) 54%);
 }
 
@@ -110,11 +110,11 @@ button, a {
 }
 
 button:hover,
-a:hover {
+a:not(.screenshot):hover {
     background: white;
 }
 
-a {
+a:not(.screenshot) {
     border: 1px solid var(--color-accent-3);
     background: var(--color-accent-3-lightest);
     color: var(--color-accent-3);
@@ -139,7 +139,7 @@ button[class^='toggle'] {
     flex: 1;
 }
 
-.screenshot {
+.screenshot img {
     width: 100%;
     height: auto;
     border: 5px dotted var(--color-accent);
