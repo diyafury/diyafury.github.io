@@ -68,10 +68,11 @@ section {
     background: white;
     padding: 4%;
     margin-bottom: 4%;
+    opacity: .3;
 }
 
 .in-view {
-    filter: hue-rotate(360deg);
+    opacity: 1;
 }
 
 blockquote p {
