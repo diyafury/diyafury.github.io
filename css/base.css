@@ -64,14 +64,14 @@ strong {
 
 section {
     border-radius: inherit;
-    /*border: 1px solid var(--color-text);*/
     background: white;
     padding: 4%;
     margin-bottom: 4%;
+    filter: drop-shadow(2px 4px 6px var(--color-accent-3));
 }
 
 .inview-detection section {
-    filter: blur(1px);
+    filter: drop-shadow(2px 4px 6px white);
     transform: rotate(-1deg) translateX(-10px);
     transition: transform .5s ease-in-out, filter .5s ease-in-out;
 }
