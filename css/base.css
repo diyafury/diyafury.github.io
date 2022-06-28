@@ -161,6 +161,9 @@ button[class^='toggle'] {
     height: 100%;
     background: black;
     animation: changeBG 1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loader > div {
@@ -185,6 +188,10 @@ button[class^='toggle'] {
                 0 0 50px #dc1ce3,
                 0 0 75px #dc1ce3;
     animation: y-axis 0.5s ease-in-out 0.25s alternate infinite;
+}
+
+.loader h2 {
+    margin-top: 260px;
 }
 
 @keyframes x-axis {
