@@ -165,7 +165,7 @@ button[class^='toggle'] {
 
 .loader > div {
     width: 30px;
-    height: 30px;;
+    height: 30px;
     position: absolute;
     top: calc(50% - 15px);
     left: calc(50% - 15px);
@@ -179,16 +179,22 @@ button[class^='toggle'] {
     height: 100%;
     position: absolute;
     background: #fff;
+    border-radius: 50%;
     box-shadow: 0 0 5px #dc1ce3,
                 0 0 25px #dc1ce3,
                 0 0 50px #dc1ce3,
                 0 0 75px #dc1ce3;
-    animation: x-axis 0.5s ease-in-out 0.25s alternate infinite;
+    animation: y-axis 0.5s ease-in-out 0.25s alternate-reverse infinite;
 }
 
 @keyframes x-axis {
-    0% { transform: translate(-60px) }
-    100% { transform: translate(60px) }
+    0% { transform: translateX(-60px) }
+    100% { transform: translateX(60px) }
+}
+
+@keyframes y-axis {
+    0% { transform: translateY(-60px) }
+    100% { transform: translateY(60px) }
 }
 
 @keyframes changeBG {
