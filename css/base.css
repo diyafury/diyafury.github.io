@@ -67,17 +67,15 @@ section {
     background: white;
     padding: 4%;
     margin-bottom: 4%;
-    filter: drop-shadow(2px 4px 6px var(--color-accent-3));
 }
 
 .inview-detection section {
-    filter: drop-shadow(2px 4px 6px white);
     transform: rotate(-1deg) translateX(-10px);
     transition: transform .5s ease-in-out, filter .5s ease-in-out;
 }
 
 .inview-detection .in-view {
-    filter: blur(0);
+    filter: drop-shadow(2px 4px 6px var(--color-accent-3));
     transform: rotate(0) translateX(0px);
 }
 
