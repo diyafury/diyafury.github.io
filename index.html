@@ -104,14 +104,15 @@
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
   };
-  window.addEventListener('scroll',(e) => {
-    if (e.currentTarget.tagName === 'section') {
-      if (inView(e.currentTarget)) {
-        e.currentTarget.classList.add("in-view")
+  window.addEventListener('scroll',() => {
+    const sections = document.querySelectorAll('section');
+    sections.forEach(element => {
+      if (inView(element)) {
+        element.classList.add("in-view")
       } else {
-        e.currentTarget.classList.remove("in-view");
+        element.classList.remove("in-view");
       }
-    }
+    });
   })
   </script>
 
