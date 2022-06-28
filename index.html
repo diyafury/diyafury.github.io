@@ -103,12 +103,8 @@
         bounding.left >= 0 &&
         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)) || 
-        
-        (bounding.bottom >= 0 && 
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) ||
 
-        (bounding.right >= 0 &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth))
+        el.innerHeight >= bounding.bottom - bounding.top
     );
   };
   window.addEventListener('scroll',() => {
