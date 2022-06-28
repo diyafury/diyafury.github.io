@@ -169,6 +169,7 @@ button[class^='toggle'] {
     position: absolute;
     top: calc(50% - 15px);
     left: calc(50% - 15px);
+    border-radius: 50%;
     animation: x-axis 1s ease-in-out alternate infinite;
 }
 
