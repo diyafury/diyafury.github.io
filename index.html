@@ -80,13 +80,12 @@
   <script>
     window.addEventListener('load',function(){
       let count = 10;
-      let t = setTimeout(()=>{
-        document.querySelector('body').classList.add("dom-loaded");
-        clearTimeout(t);
-      }, count * 1000);
       let i = setInterval(()=>{
         document.querySelector('.loader h2').innerHTML = `${count--} seconds`;
-        if ( count == 0 ) clearInterval(i);
+        if ( count === 1 ) {
+          clearInterval(i);
+          document.querySelector('body').classList.add("dom-loaded");
+        }
       },1000)
     });
   </script>
