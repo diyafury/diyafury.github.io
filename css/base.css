@@ -184,17 +184,17 @@ button[class^='toggle'] {
                 0 0 25px #dc1ce3,
                 0 0 50px #dc1ce3,
                 0 0 75px #dc1ce3;
-    animation: y-axis 0.5s ease-in-out 0.25s alternate-reverse infinite;
+    animation: y-axis 0.5s ease-in-out 0.25s alternate infinite;
 }
 
 @keyframes x-axis {
-    0% { transform: translateX(-60px) }
-    100% { transform: translateX(60px) }
+    0% { transform: translate(-60px) }
+    100% { transform: translate(60px) }
 }
 
 @keyframes y-axis {
-    0% { transform: translateY(-60px) }
-    100% { transform: translateY(60px) }
+    0% { transform: translate(-60px) }
+    100% { transform: translate(60px) }
 }
 
 @keyframes changeBG {
