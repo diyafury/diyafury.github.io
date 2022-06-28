@@ -83,12 +83,11 @@
     document.querySelector('.loader h2').innerHTML = `${count--} seconds`;
       if ( count === 1 ) {
         clearInterval(i);
-        //document.querySelector('body').classList.add("dom-loaded");
+        window.addEventListener('load',function(){
+          document.querySelector('body').classList.add("dom-loaded");
+        });
       }
-    },1000)
-    window.addEventListener('load',function(){
-      document.querySelector('body').classList.add("dom-loaded");
-    });
+    },1000);
   </script>
 
   <!-- Load React. -->
