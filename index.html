@@ -82,12 +82,12 @@
       let count = 10;
       let t = setTimeout(()=>{
         document.querySelector('body').classList.add("dom-loaded");
+        clearTimeout(t);
       }, 10000);
-      clearTimeout(t);
       let i = setInterval(()=>{
         document.querySelector('.loader h2').innerHTML = `${count--} seconds`;
+        if ( count == 0 ) clearInterval(i);
       },1000)
-      clearInterval(i);
     });
   </script>
 
