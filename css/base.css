@@ -71,13 +71,13 @@ section {
 }
 
 .inview-detection section {
-    opacity: .8;
+    filter: blur(1px);
     transform: rotate(-1deg) translateX(-10px);
-    transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+    transition: transform .5s ease-in-out, filter .5s ease-in-out;
 }
 
 .inview-detection .in-view {
-    opacity: 1;
+    filter: blur(0);
     transform: rotate(0) translateX(0px);
 }
 
