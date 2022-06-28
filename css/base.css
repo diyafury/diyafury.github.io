@@ -188,13 +188,13 @@ button[class^='toggle'] {
 }
 
 @keyframes x-axis {
-    0% { transform: translate(-60px) }
-    100% { transform: translate(60px) }
+    0% { transform: translateX(-60px) }
+    100% { transform: translateX(60px) }
 }
 
 @keyframes y-axis {
-    0% { transform: translate(-60px) }
-    100% { transform: translate(60px) }
+    0% { transform: translateY(-60px) }
+    100% { transform: translateY(60px) }
 }
 
 @keyframes changeBG {
