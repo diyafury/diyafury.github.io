@@ -81,7 +81,7 @@
     let count = 10;
     let i = setInterval(()=>{
     document.querySelector('.loader h2').innerHTML = `${count--} seconds`;
-      if ( count === 1 ) {
+      if ( count === 0 ) {
         clearInterval(i);
         window.addEventListener('load',function(){
           document.querySelector('body').classList.add("dom-loaded");
