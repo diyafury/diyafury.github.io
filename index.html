@@ -78,15 +78,16 @@
     <h2>10 seconds</h2>
   </div>
   <script>
+    let count = 10;
+    let i = setInterval(()=>{
+    document.querySelector('.loader h2').innerHTML = `${count--} seconds`;
+      if ( count === 1 ) {
+        clearInterval(i);
+        //document.querySelector('body').classList.add("dom-loaded");
+      }
+    },1000)
     window.addEventListener('load',function(){
-      let count = 10;
-      let i = setInterval(()=>{
-        document.querySelector('.loader h2').innerHTML = `${count--} seconds`;
-        if ( count === 1 ) {
-          clearInterval(i);
-          document.querySelector('body').classList.add("dom-loaded");
-        }
-      },1000)
+      document.querySelector('body').classList.add("dom-loaded");
     });
   </script>
 
