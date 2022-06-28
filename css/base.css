@@ -68,11 +68,17 @@ section {
     background: white;
     padding: 4%;
     margin-bottom: 4%;
+}
+
+.inview-detection section {
     opacity: .3;
+    transform: rotate(-20deg) translateX(-20px);
+    transition: transform 1s ease-in-out;
 }
 
 .in-view {
     opacity: 1;
+    transform: rotate(0) translateX(0px);
 }
 
 blockquote p {
