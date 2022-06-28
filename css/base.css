@@ -70,6 +70,10 @@ section {
     margin-bottom: 4%;
 }
 
+.in-view {
+    filter: hue-rotate(360deg);
+}
+
 blockquote p {
     position: relative;
 }

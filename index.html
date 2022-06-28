@@ -85,12 +85,29 @@
         clearInterval(i);
       }
     },1000);
-    window.addEventListener('load',function(){
+    window.addEventListener('load',()=>{
       let t = setTimeout(()=>{
         document.querySelector('body').classList.add("dom-loaded");
         clearTimeout(t);
       }, count * 1000)
     });
+  </script>
+
+  <!-- In viewport script -->
+  <script>
+  const inView = (el) => {
+    var bounding = el.getBoundingClientRect();
+    return (
+        bounding.top >= 0 &&
+        bounding.left >= 0 &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+  window.addEventListener('scroll',(e) => {
+    e.currentTarget.classList.remove("in-view");
+    if (e.currentTarget.tagName === 'section' && inView(e.currentTarget) && e.currentTarget.classList.add("in-view"));
+  })
   </script>
 
   <!-- Load React. -->
