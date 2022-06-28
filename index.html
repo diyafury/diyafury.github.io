@@ -72,6 +72,16 @@
 
   </div>
 
+  <!-- Page loader -->
+  <div class="loader"><div></div></div>
+  <script>
+    window.addEventListener('load',function(){
+      let t = setTimeout(()=>{
+        document.querySelector('body').classList.add("dom-loaded");
+      }, 3000)
+    });
+  </script>
+
   <!-- Load React. -->
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
