@@ -83,7 +83,7 @@
       let t = setTimeout(()=>{
         document.querySelector('body').classList.add("dom-loaded");
         clearTimeout(t);
-      }, 10000);
+      }, count * 1000);
       let i = setInterval(()=>{
         document.querySelector('.loader h2').innerHTML = `${count--} seconds`;
         if ( count == 0 ) clearInterval(i);
