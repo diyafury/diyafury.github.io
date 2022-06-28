@@ -98,14 +98,14 @@
   document.querySelector('body').classList.add("inview-detection");
   const inView = (el) => {
     let bounding = el.getBoundingClientRect();
-    console.log(el.innerHeight, bounding.top, bounding.bottom, bounding.top - bounding.bottom)
+    console.log(el.offsetHeight, bounding.top, bounding.bottom, bounding.top - bounding.bottom)
     return (
         (bounding.top >= 0 &&
         bounding.left >= 0 &&
         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)) || 
 
-        el.innerHeight >= bounding.top - bounding.bottom
+        el.offsetHeight >= bounding.bottom - bounding.top && bounding.bottom >= 0
     );
   };
   window.addEventListener('scroll',() => {
