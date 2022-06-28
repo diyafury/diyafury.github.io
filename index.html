@@ -80,10 +80,8 @@
   <script>
     let count = 5;
     let i = setInterval(()=>{
-    document.querySelector('.loader h2').innerHTML = `${count--} seconds`;
-      if ( count === 0 ) {
-        clearInterval(i);
-      }
+      document.querySelector('.loader h2').innerHTML = `${count--} seconds`;
+      if ( count === 0 ) clearInterval(i);
     },1000);
     window.addEventListener('load',()=>{
       let t = setTimeout(()=>{
@@ -99,12 +97,12 @@
   const inView = (el) => {
     let bounding = el.getBoundingClientRect();
     return (
-        (bounding.top >= 0 &&
+        bounding.top >= 0 &&
         bounding.left >= 0 &&
         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)) || 
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
 
-        el.offsetHeight >= bounding.bottom - bounding.top && bounding.bottom >= 0
+        //el.offsetHeight >= bounding.bottom - bounding.top && bounding.bottom >= 0
     );
   };
   window.addEventListener('scroll',() => {
