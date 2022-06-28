@@ -105,8 +105,13 @@
     );
   };
   window.addEventListener('scroll',(e) => {
-    e.currentTarget.classList.remove("in-view");
-    if (e.currentTarget.tagName === 'section' && inView(e.currentTarget)) e.currentTarget.classList.add("in-view");
+    if (e.currentTarget.tagName === 'section') {
+      if (inView(e.currentTarget)) {
+        e.currentTarget.classList.add("in-view")
+      } else {
+        e.currentTarget.classList.remove("in-view");
+      }
+    }
   })
   </script>
 
