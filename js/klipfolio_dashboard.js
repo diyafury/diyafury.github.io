@@ -29,7 +29,7 @@ class KlipfolioDashboard extends React.Component {
     }
     render() {
         return (
-            e( 'div', { id: 'kf-embed-container-your-kilpfolio-container-key' } );
+            e( 'div', { id: 'kf-embed-container-your-kilpfolio-container-key' } )
         );
     }
 }
