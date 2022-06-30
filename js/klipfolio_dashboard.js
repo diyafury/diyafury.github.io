@@ -1,7 +1,5 @@
 'use strict'
 
-const e = React.createElement
-
 class KlipfolioDashboard extends React.Component {
 
     componentWillMount() {
