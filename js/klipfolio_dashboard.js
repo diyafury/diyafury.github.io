@@ -1,5 +1,7 @@
 'use strict'
 
+const e = React.createElement
+
 class KlipfolioDashboard extends React.Component {
 
     componentWillMount() {
@@ -27,9 +29,7 @@ class KlipfolioDashboard extends React.Component {
     }
     render() {
         return (
-            <div id="kf-embed-container-your-kilpfolio-container-key">
-            
-            </div>
+            e( 'div', { id: 'kf-embed-container-your-kilpfolio-container-key' } );
         );
     }
 }
