@@ -7,7 +7,7 @@ class KlipfolioDashboard extends React.Component {
         script.setAttribute('id', 'klipfolioEmbed');
         script.onload = function() {
             let newScript = document.createElement('script');
-            let inlineScript = document.createTextNode('KF.embed.embedKlip({profile : "74eea255c5385cf4f6acfd1255d522d3ba5cc1e2",settings : {"width": 1141,"theme":"light","borderStyle":"square","borderColor":"#cccccc"},title : "Awesome Dashboard" });');
+            let inlineScript = document.createTextNode('KF.embed.embedKlip({profile : "74eea255c5385cf4f6acfd1255d522d3ba5cc1e2",settings : {"width": "100%","theme":"light","borderStyle":"rounded","borderColor":"#cccccc"},title : "Awesome Dashboard" });');
             newScript.setAttribute('id', 'klipfolioDashboard');
             newScript.appendChild(inlineScript); 
             document.getElementsByTagName('head')[0].appendChild(newScript); 
