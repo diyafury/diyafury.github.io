@@ -934,26 +934,26 @@ https://codepen.io/cathydutton/pen/dPPpWj
 */
 /* ie detection: fallback for IE 10, 11 and Edge. */
 :root, [data-theme=default] {
-  --color-primary-darker: hsl(219, 100%, 6%);
-  --color-primary-darker-h: 219;
+  --color-primary-darker: hsl(208, 100%, 23%);
+  --color-primary-darker-h: 208;
   --color-primary-darker-s: 100%;
-  --color-primary-darker-l: 6%;
-  --color-primary-dark: hsl(219, 100%, 16%);
-  --color-primary-dark-h: 219;
+  --color-primary-darker-l: 23%;
+  --color-primary-dark: hsl(208, 100%, 29%);
+  --color-primary-dark-h: 208;
   --color-primary-dark-s: 100%;
-  --color-primary-dark-l: 16%;
-  --color-primary: hsl(219, 100%, 26%);
-  --color-primary-h: 219;
+  --color-primary-dark-l: 29%;
+  --color-primary: hsl(208, 100%, 35%);
+  --color-primary-h: 208;
   --color-primary-s: 100%;
-  --color-primary-l: 26%;
-  --color-primary-light: hsl(219, 100%, 36%);
-  --color-primary-light-h: 219;
+  --color-primary-l: 35%;
+  --color-primary-light: hsl(208, 100%, 41%);
+  --color-primary-light-h: 208;
   --color-primary-light-s: 100%;
-  --color-primary-light-l: 36%;
-  --color-primary-lighter: hsl(219, 100%, 46%);
-  --color-primary-lighter-h: 219;
+  --color-primary-light-l: 41%;
+  --color-primary-lighter: hsl(208, 100%, 47%);
+  --color-primary-lighter-h: 208;
   --color-primary-lighter-s: 100%;
-  --color-primary-lighter-l: 46%;
+  --color-primary-lighter-l: 47%;
   --color-accent-darker: hsl(268, 100%, 6%);
   --color-accent-darker-h: 268;
   --color-accent-darker-s: 100%;
