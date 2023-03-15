@@ -139,11 +139,12 @@ html, body, div, span, object, iframe,
 h1, h2, h3, h4, p,
 a, address, img, s,
 small, strong, var,
-b, i, center, ul, li, form,
+b, i, center, ol, ul, li, form,
 table, caption,
 article, details, embed,
 figure, figcaption, footer, header,
-menu, nav, section, summary, audio, video {
+menu, nav, section, summary,
+time, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -162,7 +163,7 @@ footer, header, menu, nav, section {
   display: block;
 }
 
- ul, menu {
+ol, ul, menu {
   list-style: none;
 }
 
@@ -307,21 +308,24 @@ s {
 .text-component h2, .text-component h3, .text-component h4 {
   margin-top: calc(var(--space-unit) * 0.9375 * var(--text-space-y-multiplier, 1));
 }
-.text-component p, .text-component ul li {
+.text-component p, .text-component ul li, .text-component ol li {
   line-height: calc(var(--body-line-height) * var(--line-height-multiplier, 1));
 }
-.text-component ul, .text-component p {
+.text-component ul, .text-component ol, .text-component p {
   margin-bottom: calc(var(--space-unit) * 0.9375 * var(--text-space-y-multiplier, 1));
 }
-.text-component ul {
+.text-component ul, .text-component ol {
   list-style-position: inside;
 }
-.text-component ul ul {
+.text-component ul ul, .text-component ul ol, .text-component ol ul, .text-component ol ol {
   padding-left: 1em;
   margin-bottom: 0;
 }
 .text-component ul {
   list-style-type: disc;
+}
+.text-component ol {
+  list-style-type: decimal;
 }
 .text-component img {
   display: block;
@@ -412,6 +416,26 @@ s {
   --display: block;
 }
 
+.is-hidden {
+  display: none !important;
+}
+
+html:not(.js) .no-js\:is-hidden {
+  display: none !important;
+}
+.sr-only {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+}
+
 .flex {
   display: flex;
 }
@@ -428,12 +452,21 @@ s {
   flex-direction: column-reverse;
 }
 
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .items-center {
@@ -464,6 +497,10 @@ s {
 
 .inline-block {
   display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .hide {
@@ -622,6 +659,10 @@ s {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
+.text-shadow-md {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .line-height-lg {
   --heading-line-height: 1.22;
   --body-line-height: 1.58;
@@ -634,12 +675,20 @@ s {
   line-height: 1 !important;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 [class^=color-], [class*=" color-"] {
   --color-o: 1;
 }
 
 .color-primary {
   color: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), var(--color-o, 1));
+}
+
+.color-accent {
+  color: hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), var(--color-o, 1));
 }
 
 .color-white {
@@ -660,6 +709,10 @@ s {
   height: 100%;
 }
 
+.height-100vh {
+  height: 100vh;
+}
+
 .min-width-33\% {
   min-width: 33.3333333333%;
 }
@@ -677,6 +730,10 @@ s {
   --max-width-xxl: 100rem;
   --max-width-xxxl: 120rem;
   --max-width-xxxxl: 150rem;
+}
+
+.max-width-lg {
+  max-width: var(--max-width-lg);
 }
 
 .max-width-xxl {
@@ -706,6 +763,10 @@ s {
   .max-width-adaptive-lg {
     max-width: 80rem;
   }
+}
+
+.shadow-sm {
+  box-shadow: var(--shadow-sm);
 }
 
 .shadow-md {
@@ -819,6 +880,10 @@ s {
   background-color: hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), var(--bg-o, 1));
 }
 
+.bg-white {
+  background-color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), var(--bg-o, 1));
+}
+
 .bg-black {
   background-color: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), var(--bg-o, 1));
 }
@@ -835,6 +900,11 @@ s {
   background-repeat: no-repeat;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 [class^=flip], [class*=" flip"],
 [class^=-rotate], [class*=" -rotate"],
 [class^=rotate], [class*=" rotate"],
@@ -849,6 +919,12 @@ s {
   --skew: 0;
   --scale: 1;
   transform: translate3d(var(--translate-x, var(--translate)), var(--translate-y, var(--translate)), var(--translate-z, 0)) rotateX(var(--rotate-x, 0)) rotateY(var(--rotate-y, 0)) rotateZ(var(--rotate-z, var(--rotate))) skewX(var(--skew-x, var(--skew))) skewY(var(--skew-y, 0)) scaleX(var(--scale-x, var(--scale))) scaleY(var(--scale-y, var(--scale)));
+}
+
+.transition {
+  transition-property: var(--transition-property, all);
+  transition-duration: var(--transition-duration, 0.2s);
+  transition-delay: var(--transition-delay, 0s);
 }
 
 .visible {
@@ -1280,6 +1356,11 @@ h2, h3, h4 {
     display: flex;
   }
 }
+/*:root {
+    --shadow-sm:  0 0.3px 0.4px hsla(0, 0%, 0%, 0.025),
+                  0 0.9px 1.5px hsla(0, 0%, 0%, 0.05), 
+                  0 3.5px 6px hsla(0, 0%, 0%, 0.3);
+}*/
 .text-stroke {
   color: var(--color-black);
   -webkit-text-fill-color: transparent;
@@ -1359,6 +1440,34 @@ h2, h3, h4 {
 
 .tooltip {
   background: linear-gradient(to right, var(--gradient-primary-stop-1), var(--gradient-primary-stop-2));
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale3d(1.5, 1.5, 1.5) translate3d(-170px, -100px, 0px);
+  }
+}
+.stack-cards {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+}
+
+.stack-cards__item img {
+  animation: kenburns 20s ease-in 0s infinite;
+  animation-direction: alternate-reverse;
+  animation-play-state: paused;
+}
+
+.stack-cards__item:hover img {
+  animation-play-state: running;
+}
+
+.carousel__list {
+  align-items: stretch;
+}
+
+.carousel__item figure {
+  min-height: 60vh;
 }
 /* -------------------------------- 
 
@@ -2214,6 +2323,64 @@ Usage: codyhouse.co/license
 
 /* -------------------------------- 
 
+File#: _1_video-background
+Title: Responsive Video Background
+Descr: A full-width responsive video background
+Usage: codyhouse.co/license
+
+-------------------------------- */
+.video-bg__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.video-bg__media video {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  min-height: 100%;
+  min-width: 100%;
+  height: auto;
+  width: auto;
+  max-width: none;
+}
+@supports ((-o-object-fit: cover) or (object-fit: cover)) {
+  .video-bg__media video {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+@supports ((-o-object-fit: cover) or (object-fit: cover)) and (-ms-ime-align: auto) {
+  .video-bg__media video {
+    height: auto;
+    width: auto;
+  }
+}
+.video-bg__media img {
+  display: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .video-bg__media video {
+    visibility: hidden;
+  }
+  .video-bg__media img {
+    display: block;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* -------------------------------- 
+
 File#: _2_adv-gallery-v4
 Title: Advanced Gallery v4
 Descr: Advanced image gallery template
@@ -2227,6 +2394,172 @@ Usage: codyhouse.co/license
 .adv-gallery-v4.masonry {
   --masonry-grid-gap: 50px;
   --masonry-col-auto-size: 400px;
+}
+
+/* -------------------------------- 
+
+File#: _2_carousel
+Title: Carousel
+Descr: Display and cycle through a collection of items
+Usage: codyhouse.co/license
+
+-------------------------------- */
+:root {
+  --carousel-grid-gap: var(--space-xs);
+  --carousel-item-auto-size: 260px;
+  --carousel-transition-duration: 0.5s;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__list {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+.carousel__item {
+  flex-shrink: 0;
+  width: var(--carousel-item-auto-size);
+  margin-right: var(--carousel-grid-gap);
+  margin-bottom: var(--carousel-grid-gap);
+}
+
+.carousel__list--animating {
+  transition-property: transform;
+  transition-duration: var(--carousel-transition-duration);
+  transition-timing-function: var(--ease-out);
+}
+
+.carousel__item {
+  opacity: 0;
+  margin-bottom: 0;
+}
+
+.carousel--loaded .carousel__item {
+  opacity: 1;
+}
+
+.carousel:not(.carousel--is-dragging) .carousel__list:not(.carousel__list--animating) .carousel__item[tabindex="-1"] > * {
+  visibility: hidden;
+}
+
+.carousel[data-drag=on] .carousel__item {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.carousel[data-drag=on] .carousel__item img {
+  pointer-events: none;
+}
+
+.carousel__control {
+  --size: 40px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  background-color: var(--color-bg-light);
+  border-radius: 50%;
+  box-shadow: var(--inner-glow), var(--shadow-sm);
+  z-index: 1;
+  transition: 0.2s;
+}
+.carousel__control:active {
+  transform: translateY(1px);
+}
+.carousel__control:hover {
+  background-color: var(--color-bg-lighter);
+  box-shadow: var(--inner-glow), var(--shadow-md);
+}
+.carousel__control[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+  box-shadow: none;
+}
+.carousel__control .icon {
+  --size: 20px;
+  display: block;
+  margin: auto;
+}
+
+.carousel__navigation {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 10px);
+  gap: var(--space-xs);
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-sm);
+}
+
+.carousel__nav-item {
+  display: inline-block;
+  margin: 0 var(--space-xxxs);
+}
+@supports (grid-area: auto) {
+  .carousel__nav-item {
+    margin: 0;
+  }
+}
+.carousel__nav-item button {
+  display: block;
+  position: relative;
+  font-size: 10px;
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  background-color: var(--color-contrast-high);
+  opacity: 0.4;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.carousel__nav-item button::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: calc(50% - 0.5em);
+  font-size: 16px;
+  height: 1em;
+  width: 1em;
+  border-radius: inherit;
+  border: 1px solid var(--color-contrast-high);
+  opacity: 0;
+  transform: scale(0);
+  transition: 3s;
+}
+.carousel__nav-item button:focus {
+  outline: none;
+}
+.carousel__nav-item button:focus::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.carousel__nav-item--selected button {
+  opacity: 1;
+}
+
+.carousel__navigation--pagination {
+  grid-template-columns: repeat(auto-fit, 24px);
+}
+.carousel__navigation--pagination .carousel__nav-item button {
+  width: 24px;
+  height: 24px;
+  color: var(--color-bg);
+  font-size: 12px;
+  line-height: 24px;
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.carousel__navigation--pagination .carousel__nav-item button:focus {
+  outline: 1px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.carousel--hide-controls .carousel__navigation, .carousel--hide-controls .carousel__control {
+  display: none;
 }
 
 /* -------------------------------- 
@@ -2531,6 +2864,108 @@ Usage: codyhouse.co/license
 
 .image-zoom__input:focus ~ .image-zoom__preview {
   box-shadow: 0 0 0 2px var(--color-bg), 0 0 0 5px hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.25);
+}
+
+/* -------------------------------- 
+
+File#: _3_carousel-v2
+Title: Carousel v2
+Descr: Display a list of items and navigate through them
+Usage: codyhouse.co/license
+
+-------------------------------- */
+.carousel-v2 {
+  --carousel-grid-gap: var(--space-md);
+  --carousel-item-auto-size: 320px;
+  --carousel-transition-duration: 0.5s;
+}
+.carousel-v2 .carousel__wrapper:hover .carousel-v2__control {
+  opacity: 1;
+}
+
+.carousel-v2__control {
+  --size: 60px;
+  height: var(--size);
+  width: var(--size);
+  border-radius: 50%;
+  background-color: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.7);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  pointer-events: auto;
+  cursor: pointer;
+  margin: 0 var(--space-xxs);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+.carousel-v2__control:hover {
+  background-color: hsla(var(--color-black-h), var(--color-black-s), var(--color-black-l), 0.9);
+}
+.carousel-v2__control[disabled] {
+  display: none;
+}
+.carousel-v2__control:active {
+  transform: translateY(2px);
+}
+.carousel-v2__control .icon {
+  --size: 20px;
+  display: block;
+  color: var(--color-white);
+}
+@media (min-width: 64rem) {
+  .carousel-v2__control {
+    opacity: 0;
+  }
+}
+
+.carousel-v2__navigation {
+  display: none;
+  grid-template-columns: repeat(auto-fit, 52px);
+  grid-gap: var(--space-xs);
+  justify-content: center;
+  align-items: center;
+  margin-top: var(--space-sm);
+}
+
+@media (min-width: 64rem) {
+  .carousel-v2__navigation {
+    display: grid;
+  }
+}
+.carousel-v2__navigation-item {
+  display: inline-block;
+  margin: 0 var(--space-xxxs);
+}
+@supports (grid-area: auto) {
+  .carousel-v2__navigation-item {
+    margin: 0;
+  }
+}
+.carousel-v2__navigation-item:not(.carousel-v2__navigation-item--selected) button {
+  cursor: pointer;
+}
+.carousel-v2__navigation-item button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 24px;
+}
+.carousel-v2__navigation-item button::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: hsla(var(--color-contrast-high-h), var(--color-contrast-high-s), var(--color-contrast-high-l), 0.2);
+}
+.carousel-v2__navigation-item:not(.carousel-v2__navigation-item--selected) button:hover::before {
+  background-color: hsla(var(--color-contrast-high-h), var(--color-contrast-high-s), var(--color-contrast-high-l), 0.4);
+  transition: 0.2s;
+}
+
+.carousel-v2__navigation-item--selected button::before {
+  background-color: hsla(var(--color-contrast-high-h), var(--color-contrast-high-s), var(--color-contrast-high-l), 1);
 }
 
 /* -------------------------------- 
