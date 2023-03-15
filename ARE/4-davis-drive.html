@@ -100,15 +100,16 @@
 
     </header>
 
-    <section class="color-white bg-cover bg-center bg-no-repeat padding-y-xxl padding-y-xxxxl@xs" style="background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.5)
-    ), url('./assets/img/4-davis-drive/4davis_hero.jpg')">
-      <div class="container max-width-adaptive-lg">
+    <section class="video-bg position-relative height-100vh padding-y-xxl padding-y-xxxxl@xs shadow-md">
+      <div class="video-bg__media" aria-hidden="true">
+        <img src="./assets/img/4-davis-drive/4davis_hero.jpg" alt="">
+        <video autoplay loop muted playsInline src="./assets/vid/video-placeholder.mp4"></video>
+      </div>
+      <div class="container max-width-adaptive-lg color-white position-relative z-index-1 flex flex-center height-100%">
         <div class="padding-md padding-lg@md">
     
-          <div class="text-component text-center margin-bottom-sm text-shadow-sm">
-            <h1 class="text-uppercase text-md text-lg@xxs text-xxxl@xs text-xxxxl@md text-shadow-sm"><span class="text-glow text-stroke">4</span><span class="color-primary">Davis Drive</span></h1>
+          <div class="color-white text-component text-center margin-bottom-sm text-shadow-md">
+            <h1 class="text-uppercase text-md text-lg@xxs text-xxxl@xs text-xxxxl@md text-shadow-md"><span class="text-glow text-stroke">4 </span><span class="color-white">Davis Drive</span></h1>
             <p class="text-sm text-md@xs">Alexandria Center&reg;​ for Advanced Technologies</p>
             <div class="text-xs text-sm@xs bg-black radius-md text-center inline-block text-uppercase padding-y-xxs padding-x-md margin-top-sm"><strong>New 180,000 RSF building</strong></div>
           </div>
@@ -117,15 +118,31 @@
       </div>
     </section>
 
-    <section class="padding-y-xxl">
+    <!-- <section class="padding-y-xxl">
       <div class="container max-width-adaptive-md">
         <div class="text-component text-md text-center text-xl@xs margin-bottom-sm">
           <p>Discover <strong class="color-primary">4 Davis Drive</strong>.</p>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="position-relative color-white padding-md padding-xxl@xs" style="background-image: linear-gradient( rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8) ), url('./assets/img/4-davis-drive/4davis_hero.jpg');">
+    <section class="bg-white padding-y-xxl">
+      <div class="container max-width-adaptive-md padding-x-lg@xs">
+        <div class="text-component text-center margin-bottom-sm">
+          <!-- <h2 class="text-md text-uppercase"><strong class="text-xs">Recruit & retain top talent</strong></h2> -->
+          <h1 class="text-uppercase text-md text-lg@xxs text-xxxl@xs text-xxxxl@md line-height-1  padding-bottom-sm"><span class="text-stroke">Recruit &<br />retain</span> top talent</h1>
+          <ul class="text-md text-xl@xs">
+            <li class="padding-bottom-sm">Restaurant & café operated by locally-based restaurateur featuring farm-to-table menu</li>
+            <li class="padding-bottom-sm">EXOS fitness center featuring top personal trainers, group fitness classes, and state-of-the-art equipment</li>
+            <li class="padding-bottom-sm">Turnkey technology, video conferencing, and campus wifi</li>
+            <li class="padding-bottom-sm">On-site security guard during business hours, card access required for entry into each suite</li>
+            <li class="padding-bottom-sm">Daily cleaning and maintenance of suites and common areas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <section class="position-relative color-white padding-md padding-xxl@xs shadow-md" style="background-image: linear-gradient( rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8) ), url('./assets/img/4-davis-drive/4davis_hero.jpg');">
       <div class="position-absolute top-0 left-0 height-100% width-100% bg-cover bg-blend-multiply bg-dark bg-center bg-no-repeat" style="background-image: linear-gradient( rgba(0, 0, 0, 0.8),  rgba(0, 0, 0, 0.8) ), url('./assets/img/4-davis-drive/4davis_hero.jpg'); filter: grayscale(100%);"></div>
 
       <div class="container width-100% max-width-xxl z-index-1 position-relative">
@@ -175,29 +192,88 @@
     </section>
 
     <section class="bg-dark padding-y-xxl">
-      <div class="container max-width-adaptive-md padding-x-lg@xs">
-        <div class="text-component text-md text-xl@xs text-center margin-bottom-sm">
-          <h2 class="text-md text-uppercase"><strong class="text-xs">Recruit & retain top talent</strong></h2>
-          <ul>
-            <li class="padding-bottom-sm">Restaurant & café operated by locally-based restaurateur featuring farm-to-table menu</li>
-            <li class="padding-bottom-sm">EXOS fitness center featuring top personal trainers, group fitness classes, and state-of-the-art equipment</li>
-            <li class="padding-bottom-sm">Turnkey technology, video conferencing, and campus wifi</li>
-            <li class="padding-bottom-sm">On-site security guard during business hours, card access required for entry into each suite</li>
-            <li class="padding-bottom-sm">Daily cleaning and maintenance of suites and common areas</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+      <div class="container max-width-lg width-100%">
+        <div class="carousel carousel-v2 flex flex-column js-carousel" data-drag="off" data-loop="off" data-navigation="on" data-navigation-class="carousel-v2__navigation" data-navigation-item-class="carousel-v2__navigation-item">
+          <p class="sr-only">Carousel items</p>
+        
+          <div class="carousel__wrapper padding-sm position-relative overflow-hidden">
+            <ol class="carousel__list items-center">
+              <li class="carousel__item shadow-sm">
+                <figure class="position-relative image-zoom js-image-zoom height-100%">
+                  <img class="image-zoom__preview js-image-zoom__preview block width-100% height-100% object-cover" src="./assets/img/4-davis-drive/CommonArea.jpg" alt="Shared Amenities">
+            
+                  <figcaption class="text-sm bg-primary color-white position-absolute bottom-0 left-0 padding-y-xxs padding-x-md">
+                    <strong class="line-height-1">Shared Amenities</strong>
+                  </figcaption>
+                </figure>
+              </li>
+        
+              <li class="carousel__item shadow-sm">
+                <figure class="position-relative image-zoom js-image-zoom height-100%">
+                  <img class="image-zoom__preview js-image-zoom__preview block width-100% height-100% object-cover" src="./assets/img/4-davis-drive/Restaurant.jpg" alt="Restaurant/Café">
+            
+                  <figcaption class="text-sm bg-primary color-white position-absolute bottom-0 left-0 padding-y-xxs padding-x-md">
+                    <strong class="line-height-1">Restaurant/Café</strong>
+                  </figcaption>
+                </figure>
+              </li>
+        
+              <li class="carousel__item shadow-sm">
+                <figure class="position-relative image-zoom js-image-zoom height-100%">
+                  <img class="image-zoom__preview js-image-zoom__preview block width-100% height-100% object-cover" src="./assets/img/4-davis-drive/Technology.jpg" alt="Turnkey Technology/Conferencing">
+            
+                  <figcaption class="text-sm bg-primary color-white position-absolute bottom-0 left-0 padding-y-xxs padding-x-md">
+                    <strong class="line-height-1">Turnkey Technology/Conferencing</strong>
+                  </figcaption>
+                </figure>
+              </li>
+        
+              <li class="carousel__item shadow-sm">
+                <figure class="position-relative image-zoom js-image-zoom height-100%">
+                  <img class="image-zoom__preview js-image-zoom__preview block width-100% height-100% object-cover" src="./assets/img/4-davis-drive/Exos1.jpg" alt="Exos Fitness Center">
+            
+                  <figcaption class="text-sm bg-primary color-white position-absolute bottom-0 left-0 padding-y-xxs padding-x-md">
+                    <strong class="line-height-1">Exos Fitness Center</strong>
+                  </figcaption>
+                </figure>
+              </li>
 
-    <section class="bg-dark padding-bottom-xxl">
-      <div class="container max-width-adaptive-md">
-        <div class="adv-gallery-v4 masonry js-masonry">
+              <li class="carousel__item shadow-sm">
+                <figure class="position-relative image-zoom js-image-zoom height-100%">
+                  <img class="image-zoom__preview js-image-zoom__preview block width-100% height-100% object-cover" src="./assets/img/4-davis-drive/Exos2.jpg" alt="Exos Fitness Center">
+            
+                  <figcaption class="text-sm bg-primary color-white position-absolute bottom-0 left-0 padding-y-xxs padding-x-md">
+                    <strong class="line-height-1">Exos Fitness Center</strong>
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+        
+            <nav class="no-js:is-hidden">
+              <ul class="position-absolute top-0 left-0 bottom-0 right-0 pointer-events-none flex items-center justify-between">
+                <li>
+                  <button class="reset carousel-v2__control carousel-v2__control--prev js-carousel__control js-tab-focus">
+                    <svg class="icon" viewBox="0 0 20 20"><title>Show previous items</title><polyline points="13 2 5 10 13 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                  </button>
+                </li>
+        
+                <li>
+                  <button class="reset carousel-v2__control carousel-v2__control--next js-carousel__control js-tab-focus">
+                    <svg class="icon" viewBox="0 0 20 20"><title>Show next items</title><polyline points="7 2 15 10 7 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/></svg>
+                  </button>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <!-- <div class="adv-gallery-v4 masonry js-masonry">
           <div class="masonry__loader" aria-hidden="true">
             <svg class="icon icon--md icon--is-spinning" viewBox="0 0 32 32"><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" stroke="currentColor" fill="none"><circle cx="16" cy="16" r="15" opacity="0.4"></circle><path d="M16,1A15,15,0,0,1,31,16" stroke-linecap="butt"></path></g></svg>
           </div>
         
           <ul class="masonry__list js-masonry__list">
-            <li class="masonry__item js-masonry__item padding-x-xl@xs padding-bottom-xl reveal-fx reveal-fx--translate-up">
+          <li class="masonry__item js-masonry__item padding-x-xl@xs padding-bottom-xl reveal-fx reveal-fx--translate-up">
               <figure class="position-relative image-zoom js-image-zoom shadow-lg">
                 <img class="image-zoom__preview js-image-zoom__preview block width-100%" src="./assets/img/4-davis-drive/CommonArea.jpg" alt="Shared Amenities">
           
@@ -237,15 +313,6 @@
               </figure>
             </li>
         
-            <!-- <li class="masonry__item js-masonry__item padding-x-xl@xs padding-bottom-xl reveal-fx reveal-fx--translate-up">
-              <figure class="position-relative image-zoom js-image-zoom shadow-lg">
-                <img class="image-zoom__preview js-image-zoom__preview block width-100%" src="./assets/img/4-davis-drive/Exos2.jpg" alt="Exos Fitness Center">
-          
-                <figcaption class="text-sm bg-primary color-white position-absolute bottom-0 left-0 padding-y-xxs padding-x-md">
-                  <strong class="line-height-1">Exos Fitness Center</strong>
-                </figcaption>
-              </figure>
-            </li> -->
           </ul>
         
           <figure class="padding-x-xl@xs reveal-fx reveal-fx--translate-up">
@@ -257,7 +324,7 @@
               </figcaption>
             </div>
           </figure>
-        </div>
+        </div> -->
       </div>
     </section>
 

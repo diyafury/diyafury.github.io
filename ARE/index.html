@@ -100,16 +100,20 @@
 
     </header>
 
-    <section class="color-white bg-cover bg-center bg-no-repeat padding-y-xxl padding-y-xxxxl@xs" style="background-image: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
-      rgba(0, 0, 0, 0.5)
-    ), url('./assets/img/home/05.png')">
-      <div class="container max-width-adaptive-lg">
+    <section class="video-bg position-relative height-100vh padding-y-xxl padding-y-xxxxl@xs shadow-md">
+      <div class="video-bg__media" aria-hidden="true">
+        <img src="./assets/img/home/05.png" alt="">
+        <video autoplay loop muted playsInline>
+          <source src="./assets/vid/home-hero.mp4" type="video/mp4">
+          <source src="./assets/vid/home-hero.webm" type="video/webm">
+        </video>
+      </div>
+      <div class="container max-width-adaptive-lg color-white position-relative z-index-1 flex flex-center height-100%">
         <div class="padding-md padding-lg@md">
     
-          <div class="text-component text-center margin-bottom-sm text-shadow-sm">
+          <div class="text-component text-center margin-bottom-sm text-shadow-md">
             <div class="text-xs text-sm@xs text-center text-uppercase margin-bottom-xs">LOCATION  +  INNOVATION  +  TALENT  +  CAPITAL</div>
-            <h1 class="text-uppercase text-md text-lg@xxs text-xxxl@xs text-xxxxl@md"><span class="text-stroke">Research</span>Triangle</h1>
+            <h1 class="text-uppercase text-md text-lg@xxs text-xxxl@xs text-xxxxl@md"><span class="text-stroke">Research</span> Triangle</h1>
             <p class="text-sm text-md@xs">World-class office, laboratory, and greenhouse space in Research Triangle Park.</p>
           </div>
 
@@ -120,109 +124,107 @@
     <section class="bg-dark padding-y-xxl">
       <div class="container max-width-adaptive-md">
         <div class="text-component text-md text-xl@xs margin-bottom-sm">
-          <p class="padding-bottom-sm">
+          <p class="text-bold color-accent">
             Alexandria’s mission is to create ecosystems that ignite and accelerate the world’s most innovative companies to address the challenges of advancing human health, solving global hunger, and improving quality of life. Alexandria strives to be the very best in the world at what it does. 
           </p>
-          <p class="padding-bottom-sm">
+          <!-- <p class="padding-bottom-sm">
             Alexandria owns, operates, and develops collaborative life science and technology campuses in the top urban innovation clusters.
           </p>
           <p>
             The Research Triangle Region of North Carolina is home to one of the oldest and largest research parks in the world. Located near the mid-point of the U.S. East Coast, The “Triangle” refers to the three major research universities – Duke University, North Carolina State University and the University of North Carolina at Chapel Hill – that form the core of this innovation ecosystem.
-          </p>
+          </p> -->
         </div>
       </div>
     </section>
 
-    <section class="bg-dark">
-        <figure class="position-relative z-index-1">
-          <img class="block width-100%" src="./assets/img/home/RTP_map.jpg" alt="Locations">
-        
-          <ul class="poi js-poi">
-            <li style="top: 9.13%; left: 61.11%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Life Sciences - Durham" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
-        
-            <li style="top: 22.19%; left: 59.60%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Nextgen Medicines" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
-        
-            <li style="top: 27.25%; left: 22.47%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="6101 Quadrangle Drive" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
-        
-            <li style="top: 37.64%; left: 53.41%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="2525 NC-54" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
+    <section class="bg-dark shadow-md position-relative">
+      <img class="block width-100%" src="./assets/img/home/ARE_map_classic.png" alt="Locations">
+    
+      <ul class="poi js-poi">
+        <li style="top: 9.13%; left: 61.11%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Life Sciences - Durham" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
+    
+        <li style="top: 22.19%; left: 59.60%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Nextgen Medicines" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
+    
+        <li style="top: 27.25%; left: 22.47%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="6101 Quadrangle Drive" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
+    
+        <li style="top: 37.64%; left: 53.41%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="2525 NC-54" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
 
-            <li style="top: 37.64%; left: 63.57%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Agtech" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
+        <li style="top: 37.64%; left: 63.57%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Agtech" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
 
-            <li style="top: 41.01%; left: 60.80%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Advanced Technologies" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
+        <li style="top: 41.01%; left: 60.80%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Advanced Technologies" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
 
-            <li style="top: 43.26%; left: 53.60%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="5/7 Triangle Drive" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
+        <li style="top: 43.26%; left: 53.60%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="5/7 Triangle Drive" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
 
-            <li style="top: 46.63%; left: 55.05%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Sustainable Technologies" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
-            <li style="top: 48.88%; left: 52.40%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="100/800/801 Capitola Drive" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
+        <li style="top: 46.63%; left: 55.05%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn poi__btn--prominent tooltip-trigger js-tooltip-trigger" title="Alexandria Center&reg;​ for Sustainable Technologies" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
+        <li style="top: 48.88%; left: 52.40%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="100/800/801 Capitola Drive" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
 
-            <li style="top: 62.22%; left: 63.26%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="407 Davis Drive" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
+        <li style="top: 62.22%; left: 63.26%;" class="poi__item js-poi__item">
+          <a href="./407-davis-drive.html" class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="407 Davis Drive" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
 
-            <li style="top: 82.58%; left: 62.94%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="Kit Creek" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
+        <li style="top: 82.58%; left: 62.94%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="Kit Creek" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
 
-            <li style="top: 62.22%; left: 66.10%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="601 Davis Drive" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
+        <li style="top: 62.22%; left: 66.10%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="601 Davis Drive" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
 
-            <li style="top: 90.73%; left: 65.27%;" class="poi__item js-poi__item">
-              <button class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="6040 George Watts Hill" data-tooltip-position="right">
-                <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
-              </button>
-            </li>
-          </ul>
-        </figure>
+        <li style="top: 90.73%; left: 65.27%;" class="poi__item js-poi__item">
+          <a href="#awaitingLink" class="reset poi__btn tooltip-trigger js-tooltip-trigger" title="6040 George Watts Hill" data-tooltip-position="right">
+            <svg class="icon" viewBox="0 0 12 12" aria-hidden="true"><path d="M11,5H7V1A1,1,0,0,0,5,1V5H1A1,1,0,0,0,1,7H5v4a1,1,0,0,0,2,0V7h4a1,1,0,0,0,0-2Z"></path></svg>
+          </a>
+        </li>
+      </ul>
     </section>
 
     <section class="bg-dark padding-y-xxl">
       <div class="container max-width-adaptive-md">
         <div class="text-component text-center margin-bottom-xxl">
           <div class="text-xs text-sm@xs text-center text-uppercase margin-bottom-sm">LOCATION  +  INNOVATION  +  TALENT  +  CAPITAL</div>
-          <h1 class="text-uppercase text-md text-lg@xxs text-xxxl@xs text-xxxxl@md line-height-1"><span class="text-stroke">Our</span>Properties</h1>
+          <h1 class="text-uppercase text-md text-lg@xxs text-xxxl@xs text-xxxxl@md line-height-1"><span class="text-stroke">Our</span> Properties</h1>
         </div>
 
         <div class="article">
@@ -234,7 +236,7 @@
               </div>
 
               <div class="flex flex-column justify-center color-white padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs text-shadow-sm">
+                <div class="max-width-xxs@xs text-shadow-md">
                   <div class="margin-bottom-lg text-xs text-uppercase">1/7</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Center&reg;​ for Advanced Technologies</strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>8 Davis Drive</strong></h2>
@@ -256,7 +258,7 @@
               </div>
               
               <div class="flex flex-column justify-center padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs text-shadow-sm">
+                <div class="max-width-xxs@xs text-shadow-md">
                   <div class="margin-bottom-lg text-xs text-uppercase">2/7</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Center&reg;​ for Advanced Technologies</strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>4 Davis Drive</strong></h2>
@@ -278,7 +280,7 @@
               </div>
               
               <div class="flex flex-column justify-center color-white padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs text-shadow-sm">
+                <div class="max-width-xxs@xs text-shadow-md">
                   <div class="margin-bottom-lg text-xs text-uppercase">3/7</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Center&reg;​ for Nextgen Medicines</strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>3029 Cornwallis Road</strong></h2>
@@ -301,7 +303,7 @@
               </div>
               
               <div class="flex flex-column justify-center padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs text-shadow-sm">
+                <div class="max-width-xxs@xs text-shadow-md">
                   <div class="margin-bottom-lg text-xs text-uppercase">4/7</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Center&reg;​ for Life Sciences - Durham</strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>31 Alexandria Way</strong></h2>
@@ -323,7 +325,7 @@
               </div>
               
               <div class="flex flex-column justify-center color-white padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs text-shadow-sm">
+                <div class="max-width-xxs@xs text-shadow-md">
                   <div class="margin-bottom-lg text-xs text-uppercase">5/7</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Real Estate Equities Inc.</strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>407 Davis Drive</strong></h2>
@@ -345,7 +347,7 @@
               </div>
               
               <div class="flex flex-column justify-center padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs text-shadow-sm">
+                <div class="max-width-xxs@xs text-shadow-md">
                   <div class="margin-bottom-lg text-xs text-uppercase">6/7</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Real Estate Equities Inc.</strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>801 Capitola Drive</strong></h2>
@@ -367,7 +369,7 @@
               </div>
               
               <div class="flex flex-column justify-center color-white padding-x-lg padding-y-md">
-                <div class="max-width-xxs@xs text-shadow-sm">
+                <div class="max-width-xxs@xs text-shadow-md">
                   <div class="margin-bottom-lg text-xs text-uppercase">7/7</div>
                   <strong class="margin-bottom-xxs text-xs text-uppercase">Alexandria Real Estate Equities Inc.</strong>
                   <h2 class="margin-bottom-xs text-xxl line-height-1"><strong>100 Capitola Drive</strong></h2>
